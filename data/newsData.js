@@ -69,6 +69,21 @@ const newsData = [
         <p>Program ini mencakup pemberian insentif pajak untuk perusahaan yang berinvestasi dalam energi terbarukan, serta kerja sama dengan lembaga riset untuk mengembangkan teknologi ramah lingkungan.</p>
       `,
     },
+    {
+      id: 5,
+      title: "Kebijakan Energi Baru dan Terbarukan",
+      type: "headline",
+      image: "/terbarukan.jpg",
+      date: "Mar 18 2025",
+      description:
+        "Kebijakan pemerintah fokus pada pengembangan sumber energi terbarukan untuk memenuhi target pengurangan emisi karbon.",
+      slug: "kebijakan-energi-baru-dan-terbarukan",
+      content: `
+        <p>Pemerintah Indonesia mengumumkan kebijakan baru yang berfokus pada pengembangan sumber energi terbarukan, termasuk tenaga surya, angin, dan biomassa, sebagai bagian dari upaya menurunkan emisi karbon sebesar 30% pada tahun 2030.</p>
+        <br>
+        <p>Program ini mencakup pemberian insentif pajak untuk perusahaan yang berinvestasi dalam energi terbarukan, serta kerja sama dengan lembaga riset untuk mengembangkan teknologi ramah lingkungan.</p>
+      `,
+    },
   ];
   
   export default newsData;

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import newsData from "@/data/newsData";
+import Link from "next/link"; // Import Link dari next/link
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -103,9 +104,10 @@ const Hero = () => {
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {newsData.map((news) => (
-              <div
+              <Link
                 key={news.id}
-                className="min-w-full h-[300px]   rounded-lg overflow-hidden relative"
+                href={`/post/${news.slug}`}
+                className="min-w-full h-[300px] rounded-lg overflow-hidden relative"
               >
                 {/* Gambar Background */}
                 <Image
@@ -120,7 +122,7 @@ const Hero = () => {
                   <p className="text-gray-300 text-sm mt-2">{news.description}</p>
                   <p className="text-gray-400 text-xs mt-1">{news.date}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

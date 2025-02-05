@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div className="relative overflow-hidden bg-gray-200 ">
+        <div className="relative overflow-hidden bg-gray-900 ">
           <Navbar />
           <div className="relative  ">{children}</div>
           <Footer/>
