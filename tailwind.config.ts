@@ -9,6 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        main: "#00245A",        // Warna utama
+        secondary: "#E0E420",    // Warna sekunder
+        hover: "#D4365F",       
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
