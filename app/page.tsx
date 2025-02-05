@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Hero from "@/components/page-components/hero/Hero";
 import About from "@/components/page-components/about/About";
 import Keunggulan from "@/components/page-components/keunggulan/Keunggulan";
