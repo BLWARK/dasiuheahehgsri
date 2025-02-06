@@ -127,7 +127,7 @@ const Navbar = () => {
               Layanan
             </span>
           </Link>
-          <Link href="#services">
+          <Link href="/survei-dan-publikasi">
             <span
               className="cursor-pointer hover:text-cyan-400 transition"
               onClick={toggleMobileMenu}

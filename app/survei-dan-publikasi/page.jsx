@@ -39,7 +39,7 @@ const SurveyPublicationPage = () => {
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   return (
-    <div className="max-w-[1400px] mx-auto py-40 px-8 flex gap-10">
+    <div className="max-w-[1400px] mx-auto py-40 2xl:px-8 px-4 2xl:flex flex-row gap-10 justify-center">
       {/* KIRI: Konten berdasarkan filter */}
       <div className="flex-1">
         {/* Header Filter */}
@@ -51,7 +51,7 @@ const SurveyPublicationPage = () => {
                 setActiveTab(tab);
                 setCurrentPage(1); // Reset ke halaman pertama ketika mengganti tab
               }}
-              className={`px-4 py-2 font-semibold ${
+              className={`px-4 py-2 font-semibold 2xl:text-sm text-xs ${
                 activeTab === tab ? "bg-mains text-white" : "bg-gray-200 text-gray-700"
               } rounded`}
             >
@@ -109,7 +109,7 @@ const SurveyPublicationPage = () => {
       </div>
 
       {/* KANAN: Postingan Terbaru */}
-      <div className="w-[30%] border-l border-gray-700 pl-6">
+      <div className="2xl:w-[30%] 2xl:mt-0 mt-10 w-full border-l border-gray-700 pl-6">
         <h2 className="text-2xl font-bold mb-6">Postingan Terbaru</h2>
         <div className="w-[30%] h-[2px] bg-mains my-5"></div> {/* Garis separator heading */}
 
