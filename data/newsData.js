@@ -22,6 +22,7 @@ const newsData = [
           <strong style="font-size: 24px;">Harapan ke Depan</strong><br><br>
           <p>Dengan peluncuran Program Pangan Nasional, pemerintah berharap dapat menjaga stabilitas ekonomi dan melindungi daya beli masyarakat. Program ini juga bertujuan memperkuat kemandirian pangan, sehingga Indonesia tidak terlalu bergantung pada impor bahan makanan di masa depan.</p>
         `,
+        category: "berita",
       },
       
     {
@@ -38,6 +39,7 @@ const newsData = [
         <br>
         <p>Pertumbuhan ini didorong oleh sektor infrastruktur, teknologi, dan energi terbarukan yang menjadi fokus utama program strategis pemerintah. Dalam pidatonya, Menteri Keuangan menyatakan bahwa kebijakan fiskal yang fleksibel dan berbagai insentif pajak memainkan peranan penting dalam mendorong minat investor asing.</p>
       `,
+      category: "berita",
     },
     {
       id: 3,
@@ -53,6 +55,7 @@ const newsData = [
         <br>
         <p>Kenaikan ini didorong oleh penyelenggaraan berbagai forum diskusi, baik secara daring maupun tatap muka, di berbagai wilayah Indonesia. Dalam beberapa bulan terakhir, pemerintah menggelar lebih dari 50 acara diskusi publik untuk mendengarkan masukan langsung dari masyarakat.</p>
       `,
+      category: "berita",
     },
     {
       id: 4,
@@ -68,6 +71,7 @@ const newsData = [
         <br>
         <p>Program ini mencakup pemberian insentif pajak untuk perusahaan yang berinvestasi dalam energi terbarukan, serta kerja sama dengan lembaga riset untuk mengembangkan teknologi ramah lingkungan.</p>
       `,
+      category: "berita",
     },
     {
       id: 5,
@@ -83,6 +87,7 @@ const newsData = [
         <br>
         <p>Program ini mencakup pemberian insentif pajak untuk perusahaan yang berinvestasi dalam energi terbarukan, serta kerja sama dengan lembaga riset untuk mengembangkan teknologi ramah lingkungan.</p>
       `,
+      category: "berita",
     },
   ];
   

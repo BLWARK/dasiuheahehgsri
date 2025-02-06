@@ -1,11 +1,18 @@
 "use client";
 
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import newsData from "@/data/newsData";
+import newsData from "@/data/newsData"; // Import data berita
 import Link from "next/link"; // Import Link dari next/link
 
 const Hero = () => {
+  useEffect(() => {
+          AOS.init({ duration: 1000 });
+        }, []);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animatedText1, setAnimatedText1] = useState("");
   const [animatedText2, setAnimatedText2] = useState("");
@@ -14,9 +21,9 @@ const Hero = () => {
   const [animatedText5, setAnimatedText5] = useState("");
   const mainText1 = "Global";
   const mainText2 = "Strategi";
-  const mainText3 = "Riset"
-  const mainText4 = "Indonesia"
-  const mainText5 = "Menuju Indonesia yang demokratis, transparan, dan akuntabe"
+  const mainText3 = "Riset";
+  const mainText4 = "Indonesia";
+  const mainText5 = "Menuju Indonesia yang demokratis, transparan, dan akuntabe";
 
   useEffect(() => {
     scrambleText(mainText1, setAnimatedText1, 1000);
@@ -56,7 +63,7 @@ const Hero = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % newsData.length);
+      setCurrentSlide((prev) => (prev + 1) % 4); // Ganti ke 4 untuk hanya looping 4 berita
     }, 5000); // Slide berganti setiap 3 detik
 
     return () => clearInterval(interval);
@@ -80,34 +87,30 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-[1400px] w-full flex flex-col lg:flex-row items-start lg:items-center lg;justify-center 2xl:gap-20 gap-10 px-6 2xl:mt-0 mt-20">
-         
+      <div className="relative z-10 max-w-[1400px] w-full flex flex-col lg:flex-row items-start lg:items-center lg:justify-center 2xl:gap-20 gap-10 px-6 2xl:mt-0 mt-20">
         {/* Text Section (Kiri) */}
-        <div className="flex-1 text-white">
-        
+        <div data-aos="fade-right" className="flex-1 text-white">
           <p className="text-4xl md:text-[5em] font-bold leading-[1.2]">
-          {animatedText1} <span>  {animatedText2}</span>
+            {animatedText1} <span> {animatedText2}</span>
           </p>
-          <h1 className="text-4xl md:text-[5em] font-bold leading-[1.2] ">
-          {animatedText3}<span>  {animatedText4}</span>
+          <h1 className="text-4xl md:text-[5em] font-bold leading-[1.2] mt-4">
+            {animatedText3}
+            <span> {animatedText4}</span>
           </h1>
-          <p className="mt-8 text-lg md:text-xl">
-          {animatedText5}
-          </p>
+          <p className="mt-8 text-lg md:text-xl">{animatedText5}</p>
         </div>
 
         {/* Slide Section (Kanan) */}
-        <div className="relative w-full flex-1 overflow-hidden h-[300px]">
-      
+        <div data-aos="fade-left" className="relative w-full flex-1 overflow-hidden h-[300px]">
           <div
-            className="flex gap-2  transition-transform duration-1000 ease-in-out"
+            className="flex gap- transition-transform duration-1000 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {newsData.map((news) => (
+            {newsData.slice(0, 4).map((news) => (  // Only slice 4 news items
               <Link
                 key={news.id}
                 href={`/post/${news.slug}`}
-                className="min-w-full h-[300px] rounded-lg overflow-hidden relative"
+                className="min-w-full 2xl:h-[300px] h-[400px] rounded-lg overflow-hidden relative"
               >
                 {/* Gambar Background */}
                 <Image
@@ -118,9 +121,9 @@ const Hero = () => {
                 />
                 {/* Overlay konten */}
                 <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6">
-                  <h2 className="text-white text-xl font-bold">{news.title}</h2>
-                  <p className="text-gray-300 text-sm mt-2">{news.description}</p>
-                  <p className="text-gray-400 text-xs mt-1">{news.date}</p>
+                  <h2 className="text-white 2xl:text-xl text-md font-bold">{news.title}</h2>
+                  <p className="text-gray-300 text-sm mt-2 ">{news.description}</p>
+                  <p className="text-gray-400 text-xs mt-2">{news.date}</p>
                 </div>
               </Link>
             ))}

@@ -1,13 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 
 const About = () => {
+  useEffect(() => {
+            AOS.init({ duration: 1000 });
+          }, []);
   return (
     <div className="flex justify-center items-center w-full">
       {/* Wrapper Container */}
       <div className="w-full grid grid-cols-1 lg:grid-cols-2">
         {/* Bagian Kanan - Gambar Besar */}
-        <div className="relative w-full h-[400px] lg:h-[800px] group">
+        <div data-aos="flip-up" className="relative w-full h-[400px] lg:h-[800px] group">
           <Image
             src="/latar-belakang.jpg"
             alt="Latar Belakang"
@@ -33,7 +40,7 @@ const About = () => {
         {/* Bagian Kiri - Grid 2 kolom */}
         <div className="grid grid-rows-2">
           {/* Gambar Visi */}
-          <div className="relative w-full h-[200px] lg:h-[400px] group">
+          <div data-aos="flip-left" className="relative w-full h-[200px] lg:h-[400px] group">
             <Image
               src="/visi.jpg"
               alt="Visi"
@@ -57,7 +64,7 @@ const About = () => {
           </div>
 
           {/* Gambar Misi */}
-          <div className="relative w-full h-[200px] lg:h-[400px] group">
+          <div data-aos="flip-right" className="relative w-full h-[200px] lg:h-[400px] group">
             <Image
               src="/misi.jpg"
               alt="Misi"

@@ -58,17 +58,17 @@ const Navbar = () => {
               Beranda
             </span>
           </Link>
-          <Link href="#about">
+          <Link href="/tentang-kami">
             <span className="cursor-pointer hover:text-cyan-400 transition">
               Tentang Kami
             </span>
           </Link>
-          <Link href="#services">
+          <Link href="/layanan">
             <span className="cursor-pointer hover:text-cyan-400 transition">
               Layanan
             </span>
           </Link>
-          <Link href="#contact">
+          <Link href="/survei-dan-publikasi">
             <span className="cursor-pointer hover:text-cyan-400 transition">
               Survey & Publikasi
             </span>
@@ -108,15 +108,23 @@ const Navbar = () => {
               className="cursor-pointer hover:text-cyan-400 transition"
               onClick={toggleMobileMenu}
             >
-              Home
+              Beranda
             </span>
           </Link>
-          <Link href="#about">
+          <Link href="/tentang-kami">
             <span
               className="cursor-pointer hover:text-cyan-400 transition"
               onClick={toggleMobileMenu}
             >
-              About
+              Tentang Kami
+            </span>
+          </Link>
+          <Link href="/layanan">
+            <span
+              className="cursor-pointer hover:text-cyan-400 transition"
+              onClick={toggleMobileMenu}
+            >
+              Layanan
             </span>
           </Link>
           <Link href="#services">
@@ -124,7 +132,7 @@ const Navbar = () => {
               className="cursor-pointer hover:text-cyan-400 transition"
               onClick={toggleMobileMenu}
             >
-              Services
+              Riset & Publikasi
             </span>
           </Link>
           <Link href="#contact">

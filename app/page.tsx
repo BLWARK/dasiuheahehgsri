@@ -4,6 +4,7 @@ import Hero from "@/components/page-components/hero/Hero";
 import About from "@/components/page-components/about/About";
 import Keunggulan from "@/components/page-components/keunggulan/Keunggulan";
 import Strategic from "@/components/page-components/strategic/Strategic";
+import Market from "@/components/page-components/market-analisis/market"
 
 
 const Page = () => {
@@ -24,6 +25,9 @@ const Page = () => {
 
       <section>
         <Keunggulan />
+      </section>
+      <section>
+        <Market />
       </section>
       <section>
         <Strategic />

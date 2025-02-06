@@ -31,7 +31,7 @@ const Strategic = () => {
 
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen bg-gray-900 py-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-10">
             Strategic Goals
           </h1>
       {/* Center Image */}
