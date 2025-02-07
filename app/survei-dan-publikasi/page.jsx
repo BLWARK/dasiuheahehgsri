@@ -41,7 +41,7 @@ const SurveyPublicationPage = () => {
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   return (
-    <div className="max-w-[1400px] mx-auto py-40 2xl:px-8 px-4 2xl:flex flex-row gap-10 justify-center">
+    <div className="max-w-[1650px] mx-auto py-40 2xl:px-8 px-4 2xl:flex flex-row gap-10 justify-center">
       {/* KIRI: Konten berdasarkan filter */}
       <div className="flex-1">
         {/* Header Filter */}
@@ -68,7 +68,7 @@ const SurveyPublicationPage = () => {
             <Link key={`${item.category}-${item.id}`} href={`/post/${item.slug}`} passHref>
               <div className="border border-gray-700 rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform transform hover:scale-105">
                 {/* Gambar */}
-                <div className="relative w-full h-[200px]">
+                <div className="relative w-full h-[300px]">
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
                 {/* Konten */}
@@ -114,7 +114,7 @@ const SurveyPublicationPage = () => {
       </div>
 
       {/* KANAN: Postingan Terbaru */}
-      <div className="2xl:w-[30%] 2xl:mt-0 mt-10 w-full border-l border-gray-700 pl-6">
+      <div className="2xl:w-[25%] 2xl:mt-0 mt-10 w-full border-l border-gray-700 pl-6">
         <h2 className="text-2xl font-bold mb-6">Postingan Terbaru</h2>
         <div className="w-[30%] h-[2px] bg-mains my-5"></div> {/* Garis separator heading */}
 
@@ -130,7 +130,7 @@ const SurveyPublicationPage = () => {
                 {/* Konten Singkat */}
                 <div>
                   <h3 className="text-md font-semibold hover:text-mains">
-                    {truncateTitle(item.title, 6)}
+                    {truncateTitle(item.title, 8)}
                   </h3>
                   <p className="text-sm text-gray-500">{item.date}</p>
                 </div>

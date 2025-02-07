@@ -38,7 +38,7 @@ const Navbar = () => {
     >
       <div className="text-white py-6 px-6 md:px-40 flex justify-between items-center w-full">
         {/* Logo Section */}
-        <div className="2xl:w-32 w-20">
+        <div className="2xl:w-28 w-20">
           <Link href="/" passHref>
             <Image
               src="/logo-new.png"

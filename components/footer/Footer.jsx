@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram,  FaYoutube, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -36,18 +36,10 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
           >
-            <FaFacebookF className="text-gray-800" />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-full bg-white hover:bg-main transition"
-          >
             <FaXTwitter className="text-gray-800" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://x.com/data1n171229"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
@@ -55,12 +47,20 @@ const Footer = () => {
             <FaInstagram className="text-gray-800" />
           </a>
           <a
+            href="https://www.tiktok.com/@data1n"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-white hover:bg-main transition"
+          >
+            <FaTiktok className="text-gray-800" />
+          </a>
+          <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
           >
-            <FaLinkedinIn className="text-gray-800" />
+            <FaYoutube className="text-gray-800" />
           </a>
         </div>
       </div>
