@@ -38,7 +38,7 @@ const Navbar = () => {
     >
       <div className="text-white py-6 px-6 md:px-40 flex justify-between items-center w-full">
         {/* Logo Section */}
-        <div className="w-32">
+        <div className="2xl:w-32 w-20">
           <Link href="/" passHref>
             <Image
               src="/logo-new.png"
@@ -73,7 +73,11 @@ const Navbar = () => {
               Survey & Publikasi
             </span>
           </Link>
-          <Link href="#contact">
+          <Link
+            href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya,"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="cursor-pointer hover:text-cyan-400 transition">
               Kontak
             </span>
@@ -88,8 +92,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      
-
       {/* Mobile Navigation */}
       <div
         className={`fixed top-0 left-0 w-full bg-gray-900 text-white h-screen transform ${
@@ -97,15 +99,26 @@ const Navbar = () => {
         } transition-transform duration-300 ease-in-out`}
       >
         <div className="flex justify-between items-center px-6 py-4">
-          <span className="text-2xl font-bold">MyLogo</span>
+          <div className="2xl:w-32 w-20">
+            <Link href="/" passHref>
+              <Image
+                src="/logo-new.png"
+                alt="GSRI Logo"
+                width={128}
+                height={64}
+                className="cursor-pointer object-contain"
+                priority={true}
+              />
+            </Link>
+          </div>
           <button onClick={toggleMobileMenu} aria-label="Close Menu">
             <FaTimes size={24} />
           </button>
         </div>
-        <div className="flex flex-col items-center space-y-6 mt-10 text-lg">
+        <div className="flex flex-col items-center space-y-12 mt-20 text-lg font-bold">
           <Link href="/">
             <span
-              className="cursor-pointer hover:text-cyan-400 transition"
+              className="cursor-pointer hover:text-cyan-400 transition "
               onClick={toggleMobileMenu}
             >
               Beranda
@@ -135,12 +148,13 @@ const Navbar = () => {
               Riset & Publikasi
             </span>
           </Link>
-          <Link href="#contact">
-            <span
-              className="cursor-pointer hover:text-cyan-400 transition"
-              onClick={toggleMobileMenu}
-            >
-              Contact
+          <Link
+            href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya,"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="cursor-pointer hover:text-cyan-400 transition">
+              Kontak
             </span>
           </Link>
         </div>

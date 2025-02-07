@@ -1,73 +1,78 @@
 "use client";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import newsData from "@/data/newsData"; // Import data berita
-import Link from "next/link"; // Import Link dari next/link
+import newsData from "@/data/newsData"; 
+import Link from "next/link"; 
 
 const Hero = () => {
   useEffect(() => {
-          AOS.init({ duration: 1000 });
-        }, []);
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animatedText1, setAnimatedText1] = useState("");
   const [animatedText2, setAnimatedText2] = useState("");
   const [animatedText3, setAnimatedText3] = useState("");
   const [animatedText4, setAnimatedText4] = useState("");
   const [animatedText5, setAnimatedText5] = useState("");
+
   const mainText1 = "Global";
   const mainText2 = "Strategi";
   const mainText3 = "Riset";
   const mainText4 = "Indonesia";
-  const mainText5 = "Menuju Indonesia yang demokratis, transparan, dan akuntabe";
+  const mainText5 = "Menuju Indonesia yang demokratis, transparan, dan akuntable";
 
   useEffect(() => {
     scrambleText(mainText1, setAnimatedText1, 1000);
-    scrambleText(mainText2, setAnimatedText2, 1400); // Delay animasi kata kedua
+    scrambleText(mainText2, setAnimatedText2, 1400); 
     scrambleText(mainText3, setAnimatedText3, 1800);
-    scrambleText(mainText4, setAnimatedText4, 2000); // Delay animasi kata kedua
-    scrambleText(mainText5, setAnimatedText5, 2400); // Delay animasi kata kedua
+    scrambleText(mainText4, setAnimatedText4, 2000); 
+    scrambleText(mainText5, setAnimatedText5, 2400); 
   }, []);
 
   const scrambleText = (finalText, setText, delay = 0) => {
     const characters = "Global Strategi Riset Indonesia";
     let scrambledText = "";
     let progressIndex = 0;
-    let currentLength = 0;
 
     setTimeout(() => {
       const interval = setInterval(() => {
         if (progressIndex > finalText.length) {
           clearInterval(interval);
-          setText(finalText); // Set teks final
+          setText(finalText); 
           return;
         }
 
-        // Membuat huruf acak di posisi belum fix
         scrambledText = Array.from({ length: finalText.length }, (_, i) => {
-          if (i < progressIndex) return finalText[i]; // Huruf yang sudah benar
-          return characters.charAt(Math.floor(Math.random() * characters.length)); // Huruf acak
+          if (i < progressIndex) return finalText[i]; 
+          return characters.charAt(Math.floor(Math.random() * characters.length)); 
         }).join("");
 
         setText(scrambledText);
-
-        // Kemajuan tiap iterasi
         progressIndex += 1;
-      }, 30); // Waktu per scramble
+      }, 30);
     }, delay);
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % 4); // Ganti ke 4 untuk hanya looping 4 berita
-    }, 5000); // Slide berganti setiap 3 detik
+      setCurrentSlide((prev) => (prev + 1) % 4); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
+
+  const truncateWords = (text, wordLimit) => {
+    const words = text.split(" ");
+    return words.length > wordLimit ? words.slice(0, wordLimit).join(" ") + "..." : text;
+  };
+
+  // Sort newsData by date terbaru
+  const sortedNewsData = newsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
     <div className="relative w-screen h-screen flex items-center justify-center overflow-hidden">
@@ -93,11 +98,11 @@ const Hero = () => {
           <p className="text-4xl md:text-[5em] font-bold leading-[1.2]">
             {animatedText1} <span> {animatedText2}</span>
           </p>
-          <h1 className="text-4xl md:text-[5em] font-bold leading-[1.2] mt-4">
+          <h1 className="text-4xl md:text-[5em] font-bold leading-[1.2] 2xl:mt-4">
             {animatedText3}
             <span> {animatedText4}</span>
           </h1>
-          <p className="mt-8 text-lg md:text-xl">{animatedText5}</p>
+          <p className="2xl:mt-8 mt-4 text-lg md:text-[1.2em]">{animatedText5}</p>
         </div>
 
         {/* Slide Section (Kanan) */}
@@ -106,11 +111,11 @@ const Hero = () => {
             className="flex gap- transition-transform duration-1000 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {newsData.slice(0, 4).map((news) => (  // Only slice 4 news items
+            {sortedNewsData.slice(0, 4).map((news) => (
               <Link
                 key={news.id}
                 href={`/post/${news.slug}`}
-                className="min-w-full 2xl:h-[300px] h-[400px] rounded-lg overflow-hidden relative"
+                className="min-w-full 2xl:h-[300px] h-[250px] rounded-lg overflow-hidden relative"
               >
                 {/* Gambar Background */}
                 <Image
@@ -122,7 +127,9 @@ const Hero = () => {
                 {/* Overlay konten */}
                 <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6">
                   <h2 className="text-white 2xl:text-xl text-md font-bold">{news.title}</h2>
-                  <p className="text-gray-300 text-sm mt-2 ">{news.description}</p>
+                  <p className="text-gray-300 text-sm mt-2 ">
+                    {truncateWords(news.description, 10)}
+                  </p>
                   <p className="text-gray-400 text-xs mt-2">{news.date}</p>
                 </div>
               </Link>

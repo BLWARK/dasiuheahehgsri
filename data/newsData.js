@@ -75,20 +75,38 @@ const newsData = [
     },
     {
       id: 5,
-      title: "Kebijakan Energi Baru dan Terbarukan",
+      title: "Bocah SMP di Bekasi Antarkan Uang Palsu Dijanjikan Rp50 Ribu, Terbongkar Gegara Kecelakaan",
       type: "headline",
-      image: "/terbarukan.jpg",
-      date: "Mar 18 2025",
+      image: "/uang-palsu.jpg", // Pastikan path gambarnya ada di project
+      date: "May 15 2025",
       description:
-        "Kebijakan pemerintah fokus pada pengembangan sumber energi terbarukan untuk memenuhi target pengurangan emisi karbon.",
-      slug: "kebijakan-energi-baru-dan-terbarukan",
+        "Seorang bocah SMP di Bekasi ditangkap polisi setelah ketahuan mengantar uang palsu ke sebuah toko, terbongkar akibat kecelakaan di jalan.",
+      slug: "bocah-smp-di-bekasi-antarkan-uang-palsu",
       content: `
-        <p>Pemerintah Indonesia mengumumkan kebijakan baru yang berfokus pada pengembangan sumber energi terbarukan, termasuk tenaga surya, angin, dan biomassa, sebagai bagian dari upaya menurunkan emisi karbon sebesar 30% pada tahun 2030.</p>
+        <p>Kasus peredaran uang palsu kembali mengguncang Bekasi setelah seorang bocah sekolah menengah pertama (SMP) tertangkap tangan membawa uang palsu ke sebuah toko kelontong. Kasus ini terungkap secara tidak sengaja ketika bocah tersebut mengalami kecelakaan di jalan dan mendapat perhatian warga sekitar.</p>
         <br>
-        <p>Program ini mencakup pemberian insentif pajak untuk perusahaan yang berinvestasi dalam energi terbarukan, serta kerja sama dengan lembaga riset untuk mengembangkan teknologi ramah lingkungan.</p>
+        <strong style="font-size: 24px;">Berawal dari Janji Imbalan Rp50 Ribu</strong><br><br>
+        <p>Menurut laporan polisi, bocah tersebut mengaku dijanjikan uang tunai Rp50 ribu oleh seseorang yang tidak dikenalnya untuk mengantarkan paket uang ke sebuah toko di Bekasi Timur. Dia tidak menyadari bahwa uang yang dibawanya adalah uang palsu. Bocah itu hanya diberikan instruksi untuk memberikan bungkusan tersebut dan menerima imbalan setelahnya.</p>
+        <br>
+        <strong style="font-size: 24px;">Kecelakaan yang Menguak Fakta</strong><br><br>
+        <p>Perjalanan bocah tersebut berakhir saat ia terlibat dalam kecelakaan kecil dengan seorang pengendara motor di Jalan Ahmad Yani, Bekasi. Warga yang membantu korban kecelakaan menemukan bungkusan uang palsu yang tercecer di jalan. Kecurigaan warga membuat mereka segera menghubungi pihak kepolisian setempat.</p>
+        <br>
+        <strong style="font-size: 24px;">Polisi Menyelidiki Sindikat Uang Palsu</strong><br><br>
+        <p>Kapolres Bekasi, AKBP Rudi Hermawan, menyatakan bahwa kasus ini merupakan pintu masuk bagi penyelidikan lebih lanjut terkait jaringan peredaran uang palsu di wilayah tersebut. "Kami sudah mengantongi beberapa petunjuk dan akan segera menindaklanjuti jaringan yang lebih besar di balik kasus ini," ujarnya.</p>
+        <br>
+        <strong style="font-size: 24px;">Peringatan bagi Orang Tua dan Masyarakat</strong><br><br>
+        <p>Polisi juga mengimbau para orang tua untuk lebih waspada terhadap aktivitas anak-anak mereka. Modus seperti ini kerap menargetkan anak-anak karena mereka mudah dipercaya dan tidak curiga. "Kejadian ini bisa menjadi pelajaran penting bagi masyarakat untuk selalu mengawasi anak-anak dan melaporkan setiap aktivitas mencurigakan," tambah AKBP Rudi.</p>
+        <br>
+        <strong style="font-size: 24px;">Dukungan Psikologis untuk Bocah Tersangka</strong><br><br>
+        <p>Bocah tersebut saat ini mendapat pendampingan dari pihak kepolisian dan Dinas Sosial Bekasi. Mengingat usianya yang masih di bawah umur, polisi memastikan bahwa hak-haknya dilindungi dan proses hukum akan memperhatikan aspek rehabilitasi serta pendidikan.</p>
+        <br>
+        <p>Kasus ini menjadi pengingat betapa pentingnya kewaspadaan terhadap peredaran uang palsu yang terus mengincar masyarakat dari berbagai lapisan, termasuk anak-anak.</p>
+        <br>
+        <p><strong>Sumber:</strong> <a href="https://lensaberitajakarta.com/post/13830/bocah-smp-di-bekasi-antarkan-uang-palsu-dijanjikan-rp50-ribu-terbongkar-gegara-kecelakaan" target="_blank" style="color: #1e90ff;">lensaberitajakarta.com</a></p>
       `,
       category: "berita",
     },
+    
   ];
   
   export default newsData;

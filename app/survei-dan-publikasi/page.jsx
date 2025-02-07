@@ -23,13 +23,15 @@ const truncateTitle = (title, wordLimit) => {
 const SurveyPublicationPage = () => {
   const [activeTab, setActiveTab] = useState("all"); // Default ke all posts
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
 
-  // Filter data berdasarkan kategori yang dipilih
-  const filteredData =
+  // Filter dan sort data berdasarkan kategori yang dipilih
+  const filteredData = (
     activeTab === "all"
       ? combinedData
-      : combinedData.filter((item) => item.category === activeTab);
+      : combinedData.filter((item) => item.category === activeTab)
+  ).sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort tanggal terbaru
+  
 
   const paginatedData = filteredData.slice(
     (currentPage - 1) * itemsPerPage,
@@ -72,12 +74,12 @@ const SurveyPublicationPage = () => {
                 {/* Konten */}
                 <div className="p-4">
                   <h3 className="text-xl font-bold hover:text-mains">
-                    {truncateTitle(item.title, 6)}
+                    {truncateTitle(item.title, 8)}
                   </h3>
                   <p className="text-sm text-gray-500">{item.date}</p>
                   <p className="mt-2 text-gray-300 text-sm">
                     {item.description.length > 100
-                      ? item.description.substring(0, 100) + "..."
+                      ? item.description.substring(0, 120) + "..."
                       : item.description}
                   </p>
                 </div>
@@ -90,7 +92,10 @@ const SurveyPublicationPage = () => {
         <div className="flex justify-between mt-8">
           <button
             disabled={currentPage === 1}
-            onClick={() => setCurrentPage((prev) => prev - 1)}
+            onClick={() => setCurrentPage((prev) => prev - 1)
+              
+            }
+           
             className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
           >
             Previous
@@ -118,7 +123,7 @@ const SurveyPublicationPage = () => {
             <Link key={`${item.category}-${item.id}`} href={`/post/${item.slug}`} passHref>
               <div className="flex flex-col items-start gap-4 py-10 border-b border-gray-700 cursor-pointer transition-transform transform hover:scale-105">
                 {/* Gambar Thumbnail dengan ukuran tetap */}
-                <div className="relative w-[200px] h-[120px] rounded overflow-hidden">
+                <div className="relative w-[350px] h-[200px] rounded overflow-hidden">
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -19,11 +20,12 @@ const Footer = () => {
 
         {/* Navigation Menu */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-10 text-sm font-semibold text-gray-300 py-2">
-          <a href="/" className="hover:text-main transition">Beranda</a>
-          <a href="#about" className="hover:text-main transition">tentang Kami</a>
-          <a href="#about" className="hover:text-main transition">Publikasi</a>
-          <a href="#services" className="hover:text-main transition">Layanan</a>
-          <a href="#contact" className="hover:text-main transition">Contact</a>
+          <a href="/" className="hover:text-mains transition">Beranda</a>
+          <a href="/tentang-kami" className="hover:text-mains transition">tentang Kami</a>
+          <a href="/layanan" className="hover:text-mains transition">Layanan</a>
+          <a href="/survei-dan-publikasi" className="hover:text-mains transition">Riset & Publikasi</a>
+          
+          <a href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya," target="_blank" className="hover:text-main transition">Kontak</a>
         </div>
 
         {/* Social Media Icons */}
@@ -42,7 +44,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
           >
-            <FaTwitter className="text-gray-800" />
+            <FaXTwitter className="text-gray-800" />
           </a>
           <a
             href="https://instagram.com"

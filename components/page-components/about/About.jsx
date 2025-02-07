@@ -6,9 +6,13 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 const About = () => {
-  useEffect(() => {
-            AOS.init({ duration: 1000 });
-          }, []);
+ useEffect(() => {
+     AOS.init({
+       duration: 1000,
+       once: false,
+       mirror: true,
+     });
+   }, []);
   return (
     <div className="flex justify-center items-center w-full">
       {/* Wrapper Container */}

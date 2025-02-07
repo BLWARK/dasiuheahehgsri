@@ -12,9 +12,12 @@ ChartJS.register(ArcElement, Tooltip, ChartDataLabels); // Daftarkan plugin
 
 const Market = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        AOS.init({
+          duration: 1000,
+          once: false,
+          mirror: true,
+        });
       }, []);
-  // Data untuk pie chart
   const data = {
     labels: [
       "Pemerintah (35%)",

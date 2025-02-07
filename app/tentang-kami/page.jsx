@@ -47,7 +47,7 @@ const Page = () => {
       <div className="max-w-[1400px] 2xl:mt-28 mt-10">
         <div className="flex justify-start  items-center w-full gap-4">
           <div className="h-[5px] w-[70px] bg-mains "></div>
-          <h2 className="2xl:text-4xl text-3xl font-bold text-mains">Latar Belakang GSRI</h2>
+          <h2 className="2xl:text-4xl text-3xl font-bold text-mains">Latar Belakang</h2>
         </div>
         <div className="w-full  flex flex-col lg:flex-row items-center justify-center   ">
          
@@ -58,7 +58,7 @@ const Page = () => {
               Indonesia sebagai sebuah negara demokrasi, terus berproses dan
               berkembang, menyesuaikan diri dengan tantangan dan kebutuhan
               Masyarakat Indonesia. Demokrasi menuntut partisipasi masyarakat,
-              pengelolaan pemerintahan yang baik, transparan serta akuntabel.
+              pengelolaan pemerintahan yang baik, transparan serta akuntable.
 
             
             </p>
@@ -80,7 +80,7 @@ const Page = () => {
         {/* Konten */}
         <div className="bg-white p-6 h-[300px] rounded-b-lg shadow-lg">
           <h1 className="2xl:text-2xl text-xl font-bold text-gray-900 mb-4">
-            Menuju Indonesia yang Demokratis, Transparan, dan Akuntabel
+            Menuju Indonesia yang Demokratis, Transparan, dan Akuntable
           </h1>
           <p className="text-gray-700">
             Kami berkomitmen menciptakan Indonesia yang lebih baik melalui
