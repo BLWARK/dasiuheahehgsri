@@ -55,7 +55,7 @@ const Footer = () => {
             <FaTiktok className="text-gray-800" />
           </a>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@Data1n"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
