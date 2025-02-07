@@ -26,7 +26,7 @@ const Page = () => {
           <div className="lg:w-[40%] w-full flex justify-center items-center ">
             <div data-aos="fade-right" className="relative flex justify-end 2xl:w-[600px] 2xl:h-[500px] w-[370px] h-[400px]  z-10">
               <Image
-                src="/Sabastianus.png" // Ganti dengan path gambar yang sesuai
+                src="/Sabastianus.jpg" // Ganti dengan path gambar yang sesuai
                 alt="Profile Image"
                 fill
                 className="object-cover"

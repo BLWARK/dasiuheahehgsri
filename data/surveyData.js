@@ -2,7 +2,7 @@ const surveyData = [
     {
       id: 1,
       title: "Survei Nasional: Tingkat Kepuasan Publik terhadap Pelayanan Kesehatan",
-      type: "headline",
+      type: "survey",
       image: "/survey-healthcare.jpg",
       date: "Feb 1 2025",
       description: "Mengungkap kepuasan masyarakat terhadap pelayanan kesehatan di berbagai wilayah.",
@@ -20,7 +20,7 @@ const surveyData = [
     {
       id: 2,
       title: "Survei Tingkat Kepercayaan Masyarakat terhadap Pemerintah",
-      type: "headline",
+      type: "survey",
       image: "/survey-government.jpg",
       date: "Jan 25 2025",
       description: "Tingkat kepercayaan publik terhadap kebijakan dan kinerja pemerintah.",
@@ -35,7 +35,7 @@ const surveyData = [
     {
       id: 3,
       title: "Survei Partisipasi Politik Masyarakat dalam Pemilu 2024",
-      type: "headline",
+      type: "survey",
       image: "/survey-election.jpg",
       date: "Dec 30 2024",
       description: "Partisipasi publik dalam pemilu meningkat secara signifikan dibandingkan tahun sebelumnya.",
@@ -50,7 +50,7 @@ const surveyData = [
     {
       id: 4,
       title: "Survei Kepuasan Masyarakat terhadap Transportasi Umum",
-      type: "headline",
+      type: "survey",
       image: "/survey-transport.jpg",
       date: "Feb 15 2025",
       description: "Tingkat kepuasan masyarakat terhadap layanan transportasi umum seperti bus, kereta, dan MRT.",
@@ -65,7 +65,7 @@ const surveyData = [
     {
       id: 5,
       title: "Survei Kesadaran Publik terhadap Program Energi Terbarukan",
-      type: "headline",
+      type: "survey",
       image: "/survey-renewable.jpg",
       date: "Feb 20 2025",
       description: "Mengukur tingkat kesadaran masyarakat terhadap program energi terbarukan pemerintah.",
