@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram,  FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaInstagram,  FaYoutube, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex gap-4 my-6 md:mt-0">
           <a
-            href="https://facebook.com"
+            href="https://x.com/data1n171229"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
@@ -39,7 +39,7 @@ const Footer = () => {
             <FaXTwitter className="text-gray-800" />
           </a>
           <a
-            href="https://x.com/data1n171229"
+            href="https://www.instagram.com/data1n/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
@@ -55,7 +55,7 @@ const Footer = () => {
             <FaTiktok className="text-gray-800" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://youtube.com"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"
