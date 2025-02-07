@@ -80,15 +80,16 @@ const NewsPage = () => {
         <meta name="twitter:image" content={newsItem.image} />
       </Head>
 
-      <div className="max-w-[1400px] py-40 2xl:flex flex-row  gap-16 mx-auto">
+      <div className="max-w-[1400px] py-40 2xl:flex flex-row  2xl:gap-4 gap-16 mx-auto">
         {/* Konten Berita */}
         <div className="flex flex-col w-full 2xl:px-10 px-4 border-r border-gray-700 text-white">
+        <h1 className="2xl:text-4xl text-2xl font-bold">{newsItem.title}</h1>
+        <p className="text-gray-500 mb-5 mt-2">{newsItem.date}</p>
           <div className="relative 2xl:w-[60em] 2xl:h-[500px] w-[24.5em] h-[300px] mb-6">
             <Image src={newsItem.image} alt={newsItem.title} layout="fill" className="object-cover rounded-lg" />
           </div>
 
-          <h1 className="2xl:text-4xl text-2xl font-bold">{newsItem.title}</h1>
-          <p className="text-gray-500 mt-5">{newsItem.date}</p>
+          
 
           <div className="mt-4 text-white" dangerouslySetInnerHTML={{ __html: newsItem.content }} />
 
@@ -175,19 +176,19 @@ const NewsPage = () => {
         </div>
 
         {/* Sidebar untuk Daftar Berita Featured */}
-        <div className="2xl:w-[300px] w-full px-4 2xl:mt-0 mt-10">
-          <h2 className="text-2xl font-bold text-mains mb-6">Berita Terkait</h2>
+        <div className="2xl:w-[400px] w-full px-4 2xl:mt-0 mt-10">
+          <h2 className="text-2xl font-bold text-mains mb-6">Berita Terbaru</h2>
           <div className="w-[30%] h-[2px] bg-mains my-5"></div> {/* Garis separator heading */}
           <div className="space-y-8">
             {featuredNews.map((item) => (
               <div key={`${item.category}-${item.id}`} className="border-b border-gray-700 pb-4 flex flex-col gap-4">
-                <div className="relative w-[300px] h-[200px] rounded-lg overflow-hidden">
+                <div className="relative w-[350px] h-[200px] rounded-lg overflow-hidden">
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
                 <div>
-                  <p className="text-sm text-white">{item.date}</p>
+                  <p className="text-sm text-gray-400">{item.date}</p>
                   <Link href={`/post/${item.slug}`}>
-                    <h3 className="text-lg font-semibold text-white cursor-pointer hover:text-cyan-500">
+                    <h3 className="text-md font-semibold text-white cursor-pointer hover:text-cyan-500">
                       {item.title}
                     </h3>
                   </Link>
