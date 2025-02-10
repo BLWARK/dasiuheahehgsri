@@ -106,6 +106,43 @@ const newsData = [
       `,
       category: "berita",
     },
+    {
+      id: 6,
+      title: "Polisi Gerebek Pusat Narkoba dan Judi di Rejang Lebong, 10 Pelaku Ditangkap",
+      type: "headline",
+      image: "/gerebek-narkoba.png", // Pastikan gambar tersedia di folder yang sesuai
+      date: "May 16 2025",
+      description:
+        "Operasi besar digelar di Rejang Lebong, 10 pelaku narkoba dan judi berhasil ditangkap dalam penggerebekan.",
+      slug: "polisi-gerebek-pusat-narkoba-dan-judi-di-rejang-lebong",
+      content: `
+        <p>Sebuah operasi besar digelar oleh pihak kepolisian untuk memberantas aktivitas narkoba dan judi yang marak di Desa Kampung Jeruk, Kecamatan Binduriang, Kabupaten Rejang Lebong. Operasi ini melibatkan 282 personel gabungan dari Polres Rejang Lebong, Polda Bengkulu, dan Brimob dengan kendaraan antipeluru demi memastikan keamanan.</p>
+        <br>
+        <strong style="font-size: 24px;">Penangkapan dan Barang Bukti</strong><br><br>
+        <p>Dalam operasi tersebut, polisi berhasil menangkap 10 pelaku yang diduga terlibat dalam peredaran narkoba dan judi. Para pelaku yang diamankan di antaranya adalah ABS (40), CA, A (39), S (32), E (55), ADM (25), IS (34), J (15), SJ (36), dan AS (25). Salah satu pelaku bahkan merupakan pasangan suami istri, meskipun suaminya masih dalam pengejaran.</p>
+        <br>
+        <p>Barang bukti yang disita di lokasi meliputi:</p>
+        <ul>
+          <li>31 paket sabu</li>
+          <li>26 butir ekstasi</li>
+          <li>17 paket ganja</li>
+          <li>Uang tunai sebesar Rp 9,1 juta</li>
+          <li>Empat butir peluru kaliber 5,56 mm</li>
+          <li>18 set alat isap sabu</li>
+          <li>Berbagai senjata tajam, termasuk celurit dan pisau</li>
+        </ul>
+        <br>
+        <strong style="font-size: 24px;">Dampak Sosial dan Laporan Masyarakat</strong><br><br>
+        <p>Kapolres Rejang Lebong, AKBP Eko Budiman, menyatakan bahwa penggerebekan ini tidak lepas dari laporan masyarakat yang khawatir akan dampak sosial dari aktivitas tersebut. Aktivitas narkoba dan judi diketahui menyebabkan peningkatan angka putus sekolah dan perceraian di wilayah tersebut.</p>
+        <br>
+        <p>"Kami menerima laporan dari tokoh masyarakat yang prihatin akan situasi di desa ini. Aktivitas ilegal seperti narkoba dan judi berdampak buruk pada keluarga dan generasi muda," ujar Eko dalam konferensi pers.</p>
+        <br>
+        <strong style="font-size: 24px;">Komitmen Kepolisian</strong><br><br>
+        <p>Kepolisian berkomitmen untuk terus memberantas narkoba dan judi di wilayah Rejang Lebong dan sekitarnya. "Kami akan terus menjaga wilayah ini bersih dari narkoba dan aktivitas ilegal lainnya," tegas Kapolres.</p>
+      `,
+      category: "berita",
+    }
+    
     
   ];
   
