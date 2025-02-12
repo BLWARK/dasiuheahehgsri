@@ -80,12 +80,12 @@ const NewsPage = () => {
         <meta name="twitter:image" content={newsItem.image} />
       </Head>
 
-      <div className="max-w-[1400px] py-40 2xl:flex flex-row  2xl:gap-4 gap-16 mx-auto">
+      <div className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[950px] py-40 2xl:flex flex-row  2xl:gap-4 gap-16 mx-auto">
         {/* Konten Berita */}
         <div className="flex flex-col w-full 2xl:px-10 px-4 border-r border-gray-700 text-white">
         <h1 className="2xl:text-4xl text-2xl font-bold">{newsItem.title}</h1>
         <p className="text-gray-500 mb-5 mt-2">{newsItem.date}</p>
-          <div className="relative 2xl:w-[60em] 2xl:h-[500px] w-[24.5em] h-[300px] mb-6">
+          <div className="relative 2xl:w-[60em] 2xl:h-[500px] xl:w-[60em] xl:h-[500px] lg:w-[50em] lg:h-[500px] w-[24.5em] h-[300px] mb-6">
             <Image src={newsItem.image} alt={newsItem.title} layout="fill" className="object-cover rounded-lg" />
           </div>
 

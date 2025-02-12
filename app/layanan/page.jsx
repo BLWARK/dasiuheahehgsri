@@ -68,7 +68,7 @@ const Layanan = () => {
       </div>
 
       {/* Section Deskripsi */}
-      <div data-aos="fade-up" className="max-w-[1200px] mx-auto py-16 px-6">
+      <div data-aos="fade-up" className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[950px] mx-auto py-16 px-6">
         <h2 className="2xl:text-3xl text-2xl font-bold mb-4 text-mains">Layanan dan Program GSRI</h2>
         <p className="2xl:text-lg text-md text-gray-300">
           GSRI menyediakan berbagai layanan dan program riset dan evaluasi kebijakan yang dirancang untuk mendukung pemerintah, lembaga riset, dan organisasi swasta. Setiap layanan kami bertujuan untuk menghasilkan solusi strategis berbasis data dan riset.
@@ -76,7 +76,7 @@ const Layanan = () => {
       </div>
 
       {/* Section Kotak Layanan */}
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 gap-8 2xl:px-6 px-4">
+      <div className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[950px] mx-auto grid grid-cols-1 gap-8 2xl:px-6 px-4">
         {layananList.map((layanan, index) => (
           <div
             key={index}

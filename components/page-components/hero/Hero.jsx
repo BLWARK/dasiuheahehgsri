@@ -92,13 +92,13 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-[1400px] w-full flex flex-col lg:flex-row items-start lg:items-center lg:justify-center 2xl:gap-20 gap-10 px-6 2xl:mt-0 mt-20">
+      <div className="relative z-10 2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[1000px] md:max-w-[1200px] w-full flex flex-col lg:flex-row items-start lg:items-center lg:justify-center 2xl:gap-20 gap-10 px-6 2xl:mt-0 mt-20">
         {/* Text Section (Kiri) */}
         <div data-aos="fade-right" className="flex-1 text-white">
-          <p className="text-4xl md:text-[5em] font-bold leading-[1.2]">
+          <p className="text-4xl 2xl:text-[5em] xl:text-[4em] lg:text-[3em] md:text-[3em] font-bold leading-[1.2]">
             {animatedText1} <span> {animatedText2}</span>
           </p>
-          <h1 className="text-4xl md:text-[5em] font-bold leading-[1.2] 2xl:mt-4">
+          <h1 className="text-4xl 2xl:text-[5em] xl:text-[4em] lg:text-[3em] md:text-[3em] font-bold leading-[1.2] 2xl:mt-4">
             {animatedText3}
             <span> {animatedText4}</span>
           </h1>
@@ -106,7 +106,7 @@ const Hero = () => {
         </div>
 
         {/* Slide Section (Kanan) */}
-        <div data-aos="fade-left" className="relative w-full flex-1 overflow-hidden h-[300px]">
+        <div data-aos="fade-left" className="relative w-full flex-1 overflow-hidden 2xl:h-[400px]">
           <div
             className="flex gap- transition-transform duration-1000 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -115,7 +115,7 @@ const Hero = () => {
               <Link
                 key={news.id}
                 href={`/post/${news.slug}`}
-                className="min-w-full 2xl:h-[300px] h-[250px] rounded-lg overflow-hidden relative"
+                className="min-w-full 2xl:h-[400px] h-[250px] rounded-lg overflow-hidden relative"
               >
                 {/* Gambar Background */}
                 <Image

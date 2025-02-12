@@ -41,7 +41,7 @@ const SurveyPublicationPage = () => {
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   return (
-    <div className="max-w-[1650px] mx-auto py-40 2xl:px-8 px-4 2xl:flex flex-row gap-10 justify-center">
+    <div className="2xl:max-w-[1650px] xl:max-w-[1200px] lg:max-w-[950px] mx-auto py-40 2xl:px-8 px-4 2xl:flex flex-row gap-10 justify-center">
       {/* KIRI: Konten berdasarkan filter */}
       <div className="flex-1">
         {/* Header Filter */}
@@ -114,11 +114,11 @@ const SurveyPublicationPage = () => {
       </div>
 
       {/* KANAN: Postingan Terbaru */}
-      <div className="2xl:w-[25%] 2xl:mt-0 mt-10 w-full border-l border-gray-700 pl-6">
+      <div className="2xl:w-[25%] xl:w-full lg:w-full 2xl:mt-0 mt-10 w-full border-l border-gray-700 pl-6">
         <h2 className="text-2xl font-bold mb-6">Postingan Terbaru</h2>
-        <div className="w-[30%] h-[2px] bg-mains my-5"></div> {/* Garis separator heading */}
+        <div className="w-[30%] h-[2px] bg-mains 2xl:my-5 xl:my-0 lg:my-0"></div> {/* Garis separator heading */}
 
-        <div className="space-y-6">
+        <div className="2xl:space-y-6 xl:space-y-0 lg:space-y-0 2xl:flex 2xl:flex-col xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2 ">
           {filteredData.slice(0, 5).map((item) => (
             <Link key={`${item.category}-${item.id}`} href={`/post/${item.slug}`} passHref>
               <div className="flex flex-col items-start gap-4 py-10 border-b border-gray-700 cursor-pointer transition-transform transform hover:scale-105">

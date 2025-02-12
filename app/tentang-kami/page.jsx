@@ -16,7 +16,7 @@ const Page = () => {
      }, []);
   return (
     <div className="flex flex-col justify-center items-center  bg-gray-800 2xl:py-40  pt-40 pb-10  2xl:px-0 px-2">
-      <div className="max-w-[1400px]">
+      <div className="2xl:max-w-[1400px] xl:max-w-[1200px] lg:max-w-[950px]">
         <div data-aos="fade-right" className="flex justify-start  items-center w-full gap-4">
           <div className="h-[5px] w-[70px] bg-cyan-400 "></div>
           <h2 className="2xl:text-4xl text-3xl font-bold text-cyan-400">Profil Direktur</h2>
@@ -54,7 +54,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1400px] 2xl:mt-28 mt-10">
+      <div className=" 2xl:max-w-[1400px] xl:max-w-[1200px] lg:max-w-[950px] 2xl:mt-28 mt-10">
         <div data-aos="fade-up" className="flex justify-start  items-center w-full gap-4">
           <div className="h-[5px] w-[70px] bg-mains "></div>
           <h2 className="2xl:text-4xl text-3xl font-bold text-mains">Latar Belakang</h2>
@@ -79,7 +79,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 2xl:py-16 py-10">
+      <div className="2xl:max-w-[1400px] xl:max-w-[1200px] lg:max-w-[950px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 2xl:py-16 py-10">
       {/* Grid Kiri */}
       <div data-aos="fade-right">
         {/* Header Kotak */}
