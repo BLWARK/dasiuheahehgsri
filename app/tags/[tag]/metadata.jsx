@@ -4,15 +4,22 @@ import publicationData from "@/data/publikasiData";
 
 const combinedData = [
   ...newsData.map((item) => ({ ...item, category: "berita" })),
-  ...surveyData.map((item) => ({ ...item, category: "survey" })),
+  ...surveyData.map((item) => ({ ...item, category: "survey" })), 
   ...publicationData.map((item) => ({ ...item, category: "publikasi" })),
 ];
 
 export async function generateMetadata({ params }) {
-  const formattedTag = decodeURIComponent(params.tag.replace(/-/g, " "));
+  const rawTag = decodeURIComponent(params.tag.replace(/-/g, " "));
+
+  // Ubah format huruf (Pilih salah satu sesuai kebutuhan)
+  const formattedTag = rawTag.toLowerCase(); // 🔹 Semua huruf kecil
+  // const formattedTag = rawTag.toUpperCase(); // 🔹 Semua huruf besar
+  // const formattedTag = rawTag.replace(/\b\w/g, (char) => char.toUpperCase()); // 🔹 Title Case
 
   // Cari berita dengan tag tersebut
-  const relatedPosts = combinedData.filter((item) => item.tags?.includes(formattedTag));
+  const relatedPosts = combinedData.filter((item) => 
+    item.tags?.some(tag => tag.toLowerCase() === formattedTag.toLowerCase())
+  );
 
   if (relatedPosts.length === 0) {
     return {

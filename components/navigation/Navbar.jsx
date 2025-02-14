@@ -145,7 +145,7 @@ const Navbar = () => {
               className="cursor-pointer hover:text-cyan-400 transition"
               onClick={toggleMobileMenu}
             >
-              Riset & Publikasi
+              Survey & Publikasi
             </span>
           </Link>
           <Link

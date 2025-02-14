@@ -135,8 +135,8 @@ const SurveyPublicationPage = () => {
 
                 {/* Konten Singkat */}
                 <div>
-                  <h3 className="text-md font-semibold hover:text-mains">
-                    {truncateTitle(item.title, 8)}
+                  <h3 className="2xl:text-md 2xl:text-md lg:text-xs text-md font-semibold hover:text-mains">
+                    {truncateTitle(item.title, 6)}
                   </h3>
                   <p className="text-sm text-gray-500">{item.date}</p>
                 </div>
