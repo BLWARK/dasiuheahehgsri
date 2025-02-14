@@ -33,7 +33,7 @@ export default function TagPage() {
     <div className="2xl:max-w-[1650px] xl:max-w-[1200px] lg:max-w-[950px] mx-auto 2xl:py-40 py-32 2xl:px-8 px-4">
       <h1 className="2xl:text-xl text-lg font-bold text-white mb-6">Tag: {formattedTag}</h1>
 
-      <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-2 lg:grid-cols-2 gap-6 text-white">
         {filteredNews.map((item) => (
           <Link key={item.id} href={`/post/${item.slug}`} passHref>
             <div className="border border-gray-700 rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform transform hover:scale-105">

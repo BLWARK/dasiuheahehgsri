@@ -15,7 +15,7 @@ const page = () => {
         });
       }, []);
   return (
-    <div className='flex flex-col justify-center items-center  bg-gray-800 2xl:py-40  2xl:pt-40 pt-40 pb-10  2xl:px-0 px-2' >
+    <div className='flex flex-col justify-center items-center  bg-gray-800 2xl:py-40  2xl:pt-40 pt-40 pb-10  2xl:px-0 px-2 text-white' >
         <div className="2xl:max-w-[1400px] xl:max-w-[1200px] lg:max-w-[950px]">
         <div
           data-aos="fade-right"
@@ -45,8 +45,8 @@ const page = () => {
 
           {/* Right Section: Content */}
           <div
-            data-aos="fade-left"
-            className="lg:w-1/2 w-full p-6 text-left lg:text-left flex justify-start items-start flex-col  z-10"
+            data-aos="fade-left "
+            className="lg:w-1/2 w-full p-6 text-left lg:text-left flex justify-start items-start flex-col  z-10 "
           >
             <h3 className="2xl:text-5xl text-3xl font-semibold  mb-4 text-mains">
               Sabastianus K M Salang
@@ -78,7 +78,7 @@ const page = () => {
 
 
         </div>
-        <div data-aos="fade-right" className="2xl:max-w-[1400px] xl:max-w-[1200px] lg:max-w-[950px] 2xl:mt-20 mt-0  justify-start items-start w-full flex flex-col 2xl:px-0 px-5 ">
+        <div data-aos="fade-right" className="2xl:max-w-[1400px] xl:max-w-[1200px] lg:max-w-[950px] 2xl:mt-20 mt-0  justify-start items-start w-full flex flex-col 2xl:px-0 px-5 text-white ">
         <div
           
           className=" w-full gap-4"
