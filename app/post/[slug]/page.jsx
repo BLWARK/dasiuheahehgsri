@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation"; 
 import newsData from "@/data/newsData";
-import surveyData from "@/data/surveyData";
-import publicationData from "@/data/publikasiData";
 import Image from "next/image"; 
 import Link from "next/link";
 import Head from "next/head"; // Import Head untuk SEO
@@ -15,8 +13,7 @@ import { MdContentCopy } from "react-icons/md";
 // Gabungkan semua data
 const combinedData = [
   ...newsData.map((item) => ({ ...item, category: "berita" })),
-  ...surveyData.map((item) => ({ ...item, category: "survey" })),
-  ...publicationData.map((item) => ({ ...item, category: "publikasi" })),
+  
 ];
 
 const NewsPage = () => {
@@ -86,12 +83,12 @@ const NewsPage = () => {
         <h1 className="2xl:text-4xl text-2xl font-bold">{newsItem.title}</h1>
         <p className="text-gray-500 mb-5 mt-2">{newsItem.date}</p>
           <div className="relative 2xl:w-[60em] 2xl:h-[500px] xl:w-[60em] xl:h-[500px] lg:w-[50em] lg:h-[500px] w-[24.5em] h-[300px] mb-6">
-            <Image src={newsItem.image} alt={newsItem.title} layout="fill" className="object-cover rounded-lg" />
+            <Image src={newsItem.image} alt={newsItem.title} fill className="object-cover rounded-lg" />
           </div>
 
           
 
-          <div className="mt-4 text-white" dangerouslySetInnerHTML={{ __html: newsItem.content }} />
+          <div className="mt-4 text-white font-light" dangerouslySetInnerHTML={{ __html: newsItem.content }} />
 
           {newsItem.category === "survey" || newsItem.category === "publikasi" ? (
             <div className="mt-8">
@@ -131,6 +128,22 @@ const NewsPage = () => {
               )}
             </div>
           ) : null}
+
+           {/* TAGS SECTION */}
+           {newsItem.tags && (
+            <div className="mt-8">
+              <h3 className="text-lg font-bold text-white mb-2">Tags:</h3>
+              <div className="flex flex-wrap gap-2">
+                {newsItem.tags.map((tag, index) => (
+                  <Link key={index} href={`/tags/${tag.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                    <span className="px-3 py-1 bg-mains text-white text-sm rounded cursor-pointer hover:bg-opacity-80 transition">
+                      #{tag}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Section Share ke Media Sosial */}
           <div className="mt-12 border border-gray-700 p-10">

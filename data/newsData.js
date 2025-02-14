@@ -1,88 +1,169 @@
 const newsData = [
-    {
-        id: 1,
-        title: "Pemerintah Luncurkan Program Pangan Nasional untuk Stabilisasi Harga",
-        type: "headline",
-        image: "/pangan-nasional.jpeg",
-        date: "Jan 5 2025",
-        description: "Program baru untuk stabilisasi harga dan ketahanan pangan di seluruh wilayah Indonesia.",
-        slug: "pemerintah-luncurkan-program-pangan-nasional",
-        content: `
-          <p>Pemerintah Indonesia melalui Kementerian Pertanian meluncurkan Program Pangan Nasional 2025, yang bertujuan untuk meningkatkan ketahanan pangan di seluruh wilayah tanah air. Program ini juga berfokus pada stabilisasi harga kebutuhan pokok seperti beras, minyak goreng, dan daging.</p>
-          <br>
-          <strong style="font-size: 24px;">Dukungan Langsung kepada Petani</strong><br><br>
-          <p>Program ini memberikan berbagai insentif kepada petani lokal, seperti penyediaan benih unggul, subsidi pupuk, dan pelatihan teknis untuk meningkatkan produktivitas. Pemerintah menargetkan hasil panen meningkat sebesar 15% pada tahun pertama pelaksanaan.</p>
-          <br>
-          <strong style="font-size: 24px;">Stabilisasi Harga Pasar</strong><br><br>
-          <p>Salah satu langkah kunci dalam program ini adalah pembentukan badan stabilisasi harga yang bertugas menjaga ketersediaan barang dan mencegah lonjakan harga bahan pokok. Pemerintah juga akan memperketat pengawasan distribusi dan memperluas akses pasar bagi petani.</p>
-          <br>
-          <strong style="font-size: 24px;">Kolaborasi dengan Swasta dan Komunitas Lokal</strong><br><br>
-          <p>Pemerintah bekerja sama dengan perusahaan swasta dan komunitas lokal untuk membangun gudang penyimpanan yang memadai serta mendukung pembangunan infrastruktur logistik di daerah terpencil. Hal ini bertujuan untuk mengurangi kehilangan hasil panen dan meningkatkan akses pasar.</p>
-          <br>
-          <strong style="font-size: 24px;">Harapan ke Depan</strong><br><br>
-          <p>Dengan peluncuran Program Pangan Nasional, pemerintah berharap dapat menjaga stabilitas ekonomi dan melindungi daya beli masyarakat. Program ini juga bertujuan memperkuat kemandirian pangan, sehingga Indonesia tidak terlalu bergantung pada impor bahan makanan di masa depan.</p>
-        `,
-        category: "berita",
-      },
-      
-    {
-      id: 2,
-      title: "Laporan Ekonomi Nasional: Peningkatan Investasi Asing",
-      type: "headline",
-      image: "/laporan-ekonomi.jpeg",
-      date: "Jan 12 2025",
-      description:
-        "Investasi asing di Indonesia meningkat signifikan pada kuartal pertama 2025, menjadi indikator pertumbuhan ekonomi yang kuat.",
-      slug: "laporan-ekonomi-nasional-peningkatan-investasi-asing",
-      content: `
-        <p>Investasi asing memainkan peranan penting dalam pertumbuhan ekonomi nasional Indonesia pada tahun 2025. Pada kuartal pertama, laporan dari Bank Indonesia mengungkapkan peningkatan 15% dalam arus investasi asing langsung (FDI) dibandingkan dengan periode yang sama tahun sebelumnya.</p>
-        <br>
-        <p>Pertumbuhan ini didorong oleh sektor infrastruktur, teknologi, dan energi terbarukan yang menjadi fokus utama program strategis pemerintah. Dalam pidatonya, Menteri Keuangan menyatakan bahwa kebijakan fiskal yang fleksibel dan berbagai insentif pajak memainkan peranan penting dalam mendorong minat investor asing.</p>
-      `,
-      category: "berita",
-    },
-    {
-      id: 3,
-      title: "Partisipasi Publik Meningkat dalam Kebijakan Nasional",
-      type: "headline",
-      image: "/partisipasi.jpeg",
-      date: "Feb 5 2025",
-      description:
-        "Masyarakat semakin aktif dalam memberikan masukan dan partisipasi pada pembuatan kebijakan strategis di tingkat nasional.",
-      slug: "partisipasi-publik-meningkat-dalam-kebijakan-nasional",
-      content: `
+  {
+    id: 1,
+    title: "Pemerintah Pangkas Anggaran Rp306,69 Triliun, Ini Dampaknya",
+    type: "headline",
+    image: "/pemotongan-anggaran.jpg",
+    date: "Feb 14 2025",
+    description:
+      "Pemerintah Indonesia melakukan pemotongan anggaran APBN 2025 sebesar Rp306,69 triliun untuk efisiensi belanja negara dan pendanaan program prioritas.",
+    slug: "pemerintah-pangkas-anggaran-apbn-2025",
+    content: `
+            <p>
+            Pemerintah Indonesia resmi memangkas anggaran sebesar Rp306,69 triliun dalam APBN 2025
+            melalui Instruksi Presiden (Inpres) Nomor 1 Tahun 2025. Langkah ini bertujuan untuk meningkatkan
+            efisiensi belanja negara serta memastikan pendanaan bagi program-program prioritas nasional.
+            </p>
+            <br />
+            <strong class="judul-besar">Rincian Pemotongan Anggaran</strong>
+            <br />
+            <br />
+            <p>Pemotongan ini terdiri atas Rp256,1 triliun dari anggaran kementerian/lembaga dan Rp50,59 triliun dari transfer ke daerah.</p>
+            <ul>
+              <li>
+                <strong class="sub-judul">Kementerian PUPR</strong>: dari Rp110,95 triliun menjadi Rp29,57 triliun (pemotongan Rp81,38 triliun).
+              </li>
+              <li>
+                <strong>Kementerian Perhubungan</strong>: dari Rp31,46 triliun menjadi Rp13,58 triliun (pemotongan Rp17,87 triliun).
+              </li>
+              <li>
+                <strong>Kementerian Perumahan dan Kawasan Permukiman</strong>: dari Rp5,27 triliun menjadi Rp1,61 triliun (pemotongan Rp3,66 triliun).
+              </li>
+              <li>
+                <strong>BMKG</strong>: dari Rp2,83 triliun menjadi Rp1,40 triliun (pemotongan Rp1,42 triliun).
+              </li>
+              <li>
+                <strong>Basarnas</strong>: dari Rp1,49 triliun menjadi Rp1,01 triliun (pemotongan Rp486 miliar).
+              </li>
+            </ul>
+            <br />
+            <strong class="judul-besar">Dampak Pemotongan Anggaran</strong>
+            <br />
+            <br />
+            <p>Meski pemangkasan ini bertujuan untuk efisiensi, ada beberapa sektor yang terdampak:</p>
+            <ul>
+              <li>
+                <strong>BMKG</strong>: Kekhawatiran terhadap akurasi informasi cuaca, iklim, gempa bumi, dan tsunami akibat pemotongan anggaran lebih dari 50%.
+              </li>
+              <li>
+                <strong>Infrastruktur</strong>: DPR meminta kementerian tetap memprioritaskan proyek Infrastruktur Berbasis Masyarakat (IBM) dan konektivitas antarwilayah.
+              </li>
+              <li>
+                <strong>Industri Pariwisata</strong>: Pengurangan perjalanan dinas pemerintah dapat berdampak pada sektor hotel dan transportasi.
+              </li>
+            </ul>
+            <br />
+            <strong class="judul-besar">Langkah Antisipasi</strong>
+            <br />
+            <br />
+            <p>
+              Pemerintah menegaskan bahwa pemotongan anggaran ini tidak akan mengganggu pelayanan publik dan tetap akan mendukung program prioritas.
+              Namun, pengawasan dan evaluasi ketat diperlukan untuk memastikan efisiensi belanja tidak berdampak negatif bagi sektor-sektor vital.
+            </p>
+          `,
+    tags: ["APBN-2025", "efisiensi anggaran", "pemangkasan belanja negara", "pemotongan dana desa"],
+    category: "berita",
+  },
+
+  {
+    id: 2,
+    title: "Pemerintah Lakukan Efisiensi Anggaran Rp306,69 Triliun dalam APBN 2025",
+    type: "headline",
+    image: "/efisiensi-anggaran.png",
+    date: "Feb 14 2025",
+    description:
+      "Pemerintah Indonesia menetapkan total belanja negara sebesar Rp3.621,3 triliun dalam APBN 2025 dan melakukan efisiensi anggaran sebesar Rp306,69 triliun untuk meningkatkan efektivitas belanja dan mendukung program prioritas nasional.",
+    slug: "pemerintah-efisiensi-anggaran-apbn-2025",
+    content: `
+      <p>
+        Pemerintah Indonesia menetapkan total belanja negara dalam APBN 2025 sebesar Rp3.621,3 triliun. 
+        Dari jumlah tersebut, belanja pemerintah pusat dialokasikan sebesar Rp2.701,4 triliun, 
+        sementara transfer ke daerah mencapai Rp919,9 triliun.
+      </p>
+      <br />
+      <strong class="judul-besar">Instruksi Efisiensi Anggaran</strong>
+      <br />
+      <br />
+      <p>
+        Untuk meningkatkan efektivitas dan efisiensi belanja, pemerintah telah menginstruksikan 
+        pemotongan anggaran sebesar Rp306,69 triliun melalui Instruksi Presiden (Inpres) Nomor 1 Tahun 2025. 
+        Langkah ini bertujuan untuk memastikan bahwa alokasi dana lebih tepat sasaran dan mendukung program-program prioritas nasional.
+      </p>
+      <br />
+      <strong class="judul-besar">Komitmen Pemerintah</strong>
+      <br />
+      <br />
+      <p>
+        Menteri Keuangan, Sri Mulyani Indrawati, menegaskan bahwa meskipun terjadi efisiensi anggaran, 
+        pemerintah tetap berkomitmen untuk menjaga kualitas pelayanan publik dan memastikan bahwa program prioritas tidak terganggu.
+      </p>
+      <br />
+      <strong class="judul-besar">Kekhawatiran dan Tantangan</strong>
+      <br />
+      <br />
+      <p>
+        Namun, kebijakan efisiensi ini menimbulkan kekhawatiran terkait dampaknya pada sektor-sektor 
+        yang mengalami pengurangan anggaran. Beberapa pihak mengkhawatirkan bahwa pemotongan anggaran 
+        dapat mempengaruhi pelaksanaan program dan proyek yang telah direncanakan sebelumnya.
+      </p>
+      <br />
+      <strong class="judul-besar">Evaluasi dan Pengawasan</strong>
+      <br />
+      <br />
+      <p>
+        Pemerintah berkomitmen untuk memantau dan mengevaluasi pelaksanaan efisiensi anggaran ini 
+        guna memastikan bahwa tujuan efisiensi tercapai tanpa mengorbankan kualitas layanan dan program yang telah direncanakan.
+      </p>
+    `,
+    tags: ["APBN-2025", "efisiensi anggaran", "pemangkasan belanja negara", "pemotongan dana desa"],
+    category: "berita",
+  
+  },
+  {
+    id: 3,
+    title: "Partisipasi Publik Meningkat dalam Kebijakan Nasional",
+    type: "headline",
+    image: "/partisipasi.jpeg",
+    date: "Feb 5 2025",
+    description:
+      "Masyarakat semakin aktif dalam memberikan masukan dan partisipasi pada pembuatan kebijakan strategis di tingkat nasional.",
+    slug: "partisipasi-publik-meningkat-dalam-kebijakan-nasional",
+    content: `
         <p>Keberhasilan implementasi kebijakan publik tidak hanya bergantung pada kualitas kebijakan itu sendiri, tetapi juga pada tingkat partisipasi publik dalam proses pembuatannya. Berdasarkan survei nasional yang dilakukan GSRI, partisipasi publik dalam konsultasi dan dialog kebijakan meningkat sebesar 20% dibandingkan tahun sebelumnya.</p>
         <br>
         <p>Kenaikan ini didorong oleh penyelenggaraan berbagai forum diskusi, baik secara daring maupun tatap muka, di berbagai wilayah Indonesia. Dalam beberapa bulan terakhir, pemerintah menggelar lebih dari 50 acara diskusi publik untuk mendengarkan masukan langsung dari masyarakat.</p>
       `,
-      category: "berita",
-    },
-    {
-      id: 4,
-      title: "Kebijakan Energi Baru dan Terbarukan",
-      type: "headline",
-      image: "/terbarukan.jpg",
-      date: "Mar 18 2025",
-      description:
-        "Kebijakan pemerintah fokus pada pengembangan sumber energi terbarukan untuk memenuhi target pengurangan emisi karbon.",
-      slug: "kebijakan-energi-baru-dan-terbarukan",
-      content: `
+      tags: ["APBN-2025", "efisiensi anggaran", "pemangkasan belanja negara", "pemotongan dana desa"],
+    category: "berita",
+  },
+  {
+    id: 4,
+    title: "Kebijakan Energi Baru dan Terbarukan",
+    type: "headline",
+    image: "/terbarukan.jpg",
+    date: "Mar 18 2025",
+    description:
+      "Kebijakan pemerintah fokus pada pengembangan sumber energi terbarukan untuk memenuhi target pengurangan emisi karbon.",
+    slug: "kebijakan-energi-baru-dan-terbarukan",
+    content: `
         <p>Pemerintah Indonesia mengumumkan kebijakan baru yang berfokus pada pengembangan sumber energi terbarukan, termasuk tenaga surya, angin, dan biomassa, sebagai bagian dari upaya menurunkan emisi karbon sebesar 30% pada tahun 2030.</p>
         <br>
         <p>Program ini mencakup pemberian insentif pajak untuk perusahaan yang berinvestasi dalam energi terbarukan, serta kerja sama dengan lembaga riset untuk mengembangkan teknologi ramah lingkungan.</p>
       `,
-      category: "berita",
-    },
-    {
-      id: 5,
-      title: "Bocah SMP di Bekasi Antarkan Uang Palsu Dijanjikan Rp50 Ribu, Terbongkar Gegara Kecelakaan",
-      type: "headline",
-      image: "/uang-palsu.jpg", // Pastikan path gambarnya ada di project
-      date: "May 15 2025",
-      description:
-        "Seorang bocah SMP di Bekasi ditangkap polisi setelah ketahuan mengantar uang palsu ke sebuah toko, terbongkar akibat kecelakaan di jalan.",
-      slug: "bocah-smp-di-bekasi-antarkan-uang-palsu",
-      content: `
+      tags: ["APBN-2025", "efisiensi anggaran", "pemangkasan belanja negara", "pemotongan dana desa"],
+    category: "berita",
+  },
+  {
+    id: 5,
+    title:
+      "Bocah SMP di Bekasi Antarkan Uang Palsu Dijanjikan Rp50 Ribu, Terbongkar Gegara Kecelakaan",
+    type: "headline",
+    image: "/uang-palsu.jpg", // Pastikan path gambarnya ada di project
+    date: "May 15 2025",
+    description:
+      "Seorang bocah SMP di Bekasi ditangkap polisi setelah ketahuan mengantar uang palsu ke sebuah toko, terbongkar akibat kecelakaan di jalan.",
+    slug: "bocah-smp-di-bekasi-antarkan-uang-palsu",
+    content: `
         <p>Kasus peredaran uang palsu kembali mengguncang Bekasi setelah seorang bocah sekolah menengah pertama (SMP) tertangkap tangan membawa uang palsu ke sebuah toko kelontong. Kasus ini terungkap secara tidak sengaja ketika bocah tersebut mengalami kecelakaan di jalan dan mendapat perhatian warga sekitar.</p>
         <br>
         <strong style="font-size: 24px;">Berawal dari Janji Imbalan Rp50 Ribu</strong><br><br>
@@ -104,18 +185,20 @@ const newsData = [
         <br>
         <p><strong>Sumber:</strong> <a href="https://lensaberitajakarta.com/post/13830/bocah-smp-di-bekasi-antarkan-uang-palsu-dijanjikan-rp50-ribu-terbongkar-gegara-kecelakaan" target="_blank" style="color: #1e90ff;">lensaberitajakarta.com</a></p>
       `,
-      category: "berita",
-    },
-    {
-      id: 6,
-      title: "Polisi Gerebek Pusat Narkoba dan Judi di Rejang Lebong, 10 Pelaku Ditangkap",
-      type: "headline",
-      image: "/gerebek-narkoba.png", // Pastikan gambar tersedia di folder yang sesuai
-      date: "May 16 2025",
-      description:
-        "Operasi besar digelar di Rejang Lebong, 10 pelaku narkoba dan judi berhasil ditangkap dalam penggerebekan.",
-      slug: "polisi-gerebek-pusat-narkoba-dan-judi-di-rejang-lebong",
-      content: `
+      tags: ["APBN-2025", "efisiensi anggaran", "pemangkasan belanja negara", "pemotongan dana desa"],
+    category: "berita",
+  },
+  {
+    id: 6,
+    title:
+      "Polisi Gerebek Pusat Narkoba dan Judi di Rejang Lebong, 10 Pelaku Ditangkap",
+    type: "headline",
+    image: "/gerebek-narkoba.png", // Pastikan gambar tersedia di folder yang sesuai
+    date: "May 16 2025",
+    description:
+      "Operasi besar digelar di Rejang Lebong, 10 pelaku narkoba dan judi berhasil ditangkap dalam penggerebekan.",
+    slug: "polisi-gerebek-pusat-narkoba-dan-judi-di-rejang-lebong",
+    content: `
         <p>Sebuah operasi besar digelar oleh pihak kepolisian untuk memberantas aktivitas narkoba dan judi yang marak di Desa Kampung Jeruk, Kecamatan Binduriang, Kabupaten Rejang Lebong. Operasi ini melibatkan 282 personel gabungan dari Polres Rejang Lebong, Polda Bengkulu, dan Brimob dengan kendaraan antipeluru demi memastikan keamanan.</p>
         <br>
         <strong style="font-size: 24px;">Penangkapan dan Barang Bukti</strong><br><br>
@@ -140,11 +223,9 @@ const newsData = [
         <strong style="font-size: 24px;">Komitmen Kepolisian</strong><br><br>
         <p>Kepolisian berkomitmen untuk terus memberantas narkoba dan judi di wilayah Rejang Lebong dan sekitarnya. "Kami akan terus menjaga wilayah ini bersih dari narkoba dan aktivitas ilegal lainnya," tegas Kapolres.</p>
       `,
-      category: "berita",
-    }
-    
-    
-  ];
-  
-  export default newsData;
-  
+      tags: ["APBN-2025", "efisiensi-anggaran", "pemangkasan belanja negara", "pemotongan dana desa"],
+    category: "berita",
+  },
+];
+
+export default newsData;
