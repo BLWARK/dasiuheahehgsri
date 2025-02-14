@@ -45,12 +45,15 @@ const page = () => {
 
           {/* Right Section: Content */}
           <div
-            data-aos="fade-left "
+            data-aos="fade-left"
             className="lg:w-1/2 w-full p-6 text-left lg:text-left flex justify-start items-start flex-col  z-10 "
           >
-            <h3 className="2xl:text-5xl text-3xl font-semibold  mb-4 text-mains">
-              Sabastianus K M Salang
+            <h3 className="2xl:text-5xl text-2xl font-semibold text-mains mb-4">
+              Sebastian Salang
             </h3>
+            <p className="2xl:text-lg text-sm font-semibold italic w-full  text-mains mb-4">
+            Wakil Sekjen Golkar (Periode 2019-2024)
+            </p>
             <p className='font-semibold text-lg text-mains 2xl:mt-8 mt-4'>Profile Direktur</p>
             <p className="2xl:text-md text-sm w-full font-md text-white my-4">
               Sebastian Salang adalah seorang pakar politik dan komunikasi yang
