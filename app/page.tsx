@@ -5,7 +5,7 @@ import About from "@/components/page-components/about/About";
 import Keunggulan from "@/components/page-components/keunggulan/Keunggulan";
 import Strategic from "@/components/page-components/strategic/Strategic";
 import Market from "@/components/page-components/market-analisis/market"
-import Video from "@/components/page-components/video/Video";
+// import Video from "@/components/page-components/video/Video";
 import Cta from "@/components/page-components/CTA/Cta"
 
 
@@ -34,9 +34,9 @@ const Page = () => {
       <section>
         <Strategic />
       </section>
-      <section>
+      {/* <section>
         <Video />
-      </section>
+      </section> */}
       <section>
         <Cta />
       </section>
