@@ -1,54 +1,31 @@
 const videoData = [
     {
       id: 1,
-      title: "Strategi Riset Pasar di Era Digital",
-      description: "Pelajari bagaimana riset pasar dapat membantu bisnis berkembang.",
-      embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Ganti dengan link video YouTube
+      title: "Pemerintah punya 4 program mirip MBG yg masih existing !!!",
+      description: "Selain MBG, pemerintah masih memiliki 4 program lain yang serupa dan masih aktif hingga saat ini. Program-program ini dirancang untuk memberikan manfaat yang optimal bagi masyarakat. Ingin tahu lebih lanjut tentang program-program tersebut dan bagaimana cara memanfaatkannya? Simak video ini sampai selesai!",
+      embedUrl: "https://www.youtube.com/embed/ez3sDUgTFVY?si=8SoVe7t7i0OJ7Cvj", // Ganti dengan link video YouTube
     },
     {
       id: 2,
-      title: "Teknologi AI dalam Analisis Data",
-      description: "Bagaimana kecerdasan buatan mengubah cara kita menganalisis data?",
-      embedUrl: "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+      title: "Jika program ini tepat sasaran, 25 juta orang miskin teratasi dalam setahun !!!",
+      description: "Program ini berpotensi mengentaskan 25 juta orang miskin dalam setahun jika diterapkan dengan tepat sasaran. Bagaimana mekanismenya? Simak selengkapnya di video ini!",
+      embedUrl: "https://www.youtube.com/embed/mEwgy4-k-IM?si=Sq6b6A0JPXCgt_gS",
     },
     {
       id: 3,
-      title: "Masa Depan Big Data di Indonesia",
-      description: "Diskusi tentang penerapan Big Data dalam berbagai industri.",
-      embedUrl: "https://www.youtube.com/embed/V-_O7nl0Ii0",
+      title: "Hasil Riset GSRI mengenai APBN 2025: Besar Pasak Daripada Tiang",
+      description: "Di Episode perdana Data1n ini, kita akan membahas tentang Politik APBN Pemerintahan Prabowo-Gibran. Bersama Bang Sebastian Salang, kami akan menganalisis bagaimana pemerintahan Prabowo-Gibran mengelola anggaran negara dan bagaimana kebijakan ini mempengaruhi perekonomian dan masyarakat Indonesia.",
+      embedUrl: "https://www.youtube.com/embed/lt3tvgD4J5o?si=wF2V3PPNgtPmwG_y",
     },
     {
       id: 4,
-      title: "Keamanan Data dan Privasi Online",
-      description: "Pentingnya keamanan data dalam dunia digital yang semakin terbuka.",
-      embedUrl: "https://www.youtube.com/embed/k85mRPqvMbE",
+      title: "[Full] Efisiensi Setengah Hati Prabowo. APBN 2025: Kemana Arah Pemerintahan Prabowo?",
+      description: "Politik APBN Pemerintahan Prabowo-Gibran. Bersama Bang Sebastian Salang, kami akan menganalisis bagaimana pemerintahan Prabowo-Gibran mengelola anggaran negara dan bagaimana kebijakan ini mempengaruhi perekonomian dan masyarakat Indonesia.",
+      embedUrl: "https://www.youtube.com/embed/qvggx_pfgWE?si=WwfNYUcnUl8Dm4HG",
       
     },
 
-    {
-        id: 5,
-        title: "Strategi Riset Pasar di Era Digital",
-        description: "Pelajari bagaimana riset pasar dapat membantu bisnis berkembang.",
-        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Ganti dengan link video YouTube
-      },
-      {
-        id: 6,
-        title: "Teknologi AI dalam Analisis Data",
-        description: "Bagaimana kecerdasan buatan mengubah cara kita menganalisis data?",
-        embedUrl: "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-      },
-      {
-        id: 7,
-        title: "Masa Depan Big Data di Indonesia",
-        description: "Diskusi tentang penerapan Big Data dalam berbagai industri.",
-        embedUrl: "https://www.youtube.com/embed/V-_O7nl0Ii0",
-      },
-      {
-        id: 8,
-        title: "Keamanan Data dan Privasi Online",
-        description: "Pentingnya keamanan data dalam dunia digital yang semakin terbuka.",
-        embedUrl: "https://www.youtube.com/embed/k85mRPqvMbE",
-      },
+    
   ];
   
   export default videoData;
