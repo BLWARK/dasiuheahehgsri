@@ -31,7 +31,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex gap-4 my-6 md:mt-0">
           <a
-            href="https://x.com/data1n171229"
+            href="https://x.com/Data1n"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white hover:bg-main transition"

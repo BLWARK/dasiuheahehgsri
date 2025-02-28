@@ -523,6 +523,86 @@ const newsData = [
       "Efisiensi Investasi"
     ]
   },
+  {
+    id: 10,
+    title: "GSRI Resmi Luncurkan Data1n: Platform Riset Terpercaya tentang Kebijakan Publik dan Anggaran Negara",
+    type: "headline",
+    image: "/gsri-data1n.jpeg",
+    date: "Feb 28 2025",
+    description:
+      "Guna meningkatkan transparansi dan akurasi data seputar kebijakan publik, GSRI meluncurkan Data1n sebagai platform berbasis riset yang menyajikan data serta analisis objektif mengenai kebijakan pemerintah dan anggaran negara.",
+    slug: "gsri-luncurkan-data1n",
+    content: `
+      <strong class="judul-besar">Peluncuran Data1n oleh GSRI</strong><br /><br />
+      <p>
+        Global Strategi Riset Indonesia (<strong>GSRI</strong>) dengan bangga meluncurkan <strong>Data1n</strong>, sebuah platform berbasis riset yang menyajikan data serta analisis objektif mengenai kebijakan pemerintah dan anggaran negara. 
+        Langkah ini diambil untuk meningkatkan transparansi serta akurasi informasi bagi masyarakat.
+      </p>
+      <br />
+      <p>
+        Acara peluncuran Data1n ditandai dengan penandatanganan Memorandum of Understanding (<strong>MoU</strong>) antara GSRI dan <strong>XYZ Creative Media</strong> di Jakarta. Kerja sama ini bertujuan untuk memperluas jangkauan informasi berbasis data yang lebih luas dan mendalam.
+      </p>
+      <br />
+      <strong class="judul-besar">Misi Data1n</strong><br /><br />
+      <p>
+        Sebagai bagian dari upaya mendorong partisipasi publik, Data1n difokuskan pada penyajian data riset yang komprehensif dan terverifikasi. Platform ini hadir untuk mengisi kebutuhan informasi kredibel terkait kebijakan pemerintah.
+      </p>
+      <br />
+      <p>
+        “GSRI fokus pada riset kebijakan pemerintah dan anggaran. Kami ingin masyarakat mendapat gambaran utuh dan berbasis bukti data mengenai arah kebijakan yang diambil. Peluncuran Data1n ini kami harap dapat menjadi sumber referensi akurat bagi publik,” ujar <strong>Sebastian Salang</strong>, Direktur Eksekutif GSRI saat launching Data1n di Jakarta Pusat.
+      </p>
+      <br />
+      <strong class="judul-besar">Kolaborasi dengan XYZ Creative Media</strong><br /><br />
+      <p>
+        Dalam kesempatan yang sama, GSRI menandatangani MoU dengan XYZ Creative Media. Kolaborasi ini menitikberatkan pada pemanfaatan teknologi dan pengemasan kreatif agar hasil riset dapat tersampaikan secara efektif, menarik, dan mudah dipahami oleh berbagai kalangan.
+      </p>
+      <br />
+      <p>
+        “Bekerja sama dengan XYZ Creative Media memungkinkan kami memanfaatkan format multimedia—termasuk podcast, video, hingga infografis—agar analisis kebijakan pemerintah lebih dekat dan relevan bagi khalayak luas,” imbuh Sebastian.
+      </p>
+      <br />
+      <p>
+        Direktur XYZ Creative Media, <strong>Ricky Nehemia Adam</strong>, juga mengungkapkan antusiasmenya terhadap kerja sama ini. “Sinergi ini memungkinkan kami menggabungkan kekuatan data dan riset ilmiah GSRI dengan keahlian kami di bidang multimedia dan konten kreatif. Kami berkomitmen untuk menghadirkan konten-konten yang tidak hanya edukatif tetapi juga relevan dengan kondisi sosial dan politik terkini,” ujarnya.
+      </p>
+      <br />
+      <strong class="judul-besar">Fokus Penelitian: APBN 2025 di Bawah Pemerintahan Prabowo</strong><br /><br />
+      <p>
+        Pada tahap awal peluncuran, GSRI melalui Data1n menyoroti <strong>APBN 2025</strong> yang diberlakukan di bawah pemerintahan Presiden Prabowo. Berdasarkan hasil riset yang telah dipublikasikan, GSRI menemukan beberapa tantangan utama:
+      </p>
+      <br />
+      <p>
+        <strong>Defisit Anggaran</strong> – Kekurangan antara pendapatan dan belanja negara berpotensi memengaruhi stabilitas perekonomian.
+      </p>
+      <br />
+      <p>
+        <strong>Efisiensi Setengah Hati</strong> – Pemotongan anggaran telah dilakukan, tetapi masih ada program-program tumpang tindih yang berisiko menyebabkan pemborosan.
+      </p>
+      <br />
+      <p>
+        <strong>Potensi Tumpang Tindih Dana Sosial</strong> – Beberapa program bantuan sosial dinilai tidak terkoordinasi dengan optimal, yang berpotensi menyebabkan duplikasi anggaran.
+      </p>
+      <br />
+      <p>
+        Rincian lebih lanjut mengenai riset ini telah dirangkum dalam kanal YouTube Data1n dengan tajuk <strong>“Efisiensi Setengah Hati Prabowo. APBN 2025: Kemana Arah Pemerintahan Prabowo?”</strong>.
+      </p>
+      <br />
+    `,
+    category: "berita",
+    tags: [
+      "GSRI",
+      "Data1n",
+      "Kebijakan Publik",
+      "Anggaran Negara",
+      "XYZ Creative Media",
+      "Transparansi Keuangan",
+      "APBN 2025",
+      "Pemerintahan Prabowo",
+      "Defisit Anggaran",
+      "Reformasi Fiskal"
+    ]
+},
+
+  
 ];
 
 export default newsData;

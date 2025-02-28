@@ -70,7 +70,12 @@ const Navbar = () => {
           </Link>
           <Link href="/survei-dan-publikasi">
             <span className="cursor-pointer hover:text-cyan-400 transition">
-              Survey & Publikasi
+              Riset & Publikasi
+            </span>
+          </Link>
+          <Link href="/video">
+            <span className="cursor-pointer hover:text-cyan-400 transition">
+              Video
             </span>
           </Link>
           <Link
@@ -145,7 +150,15 @@ const Navbar = () => {
               className="cursor-pointer hover:text-cyan-400 transition"
               onClick={toggleMobileMenu}
             >
-              Survey & Publikasi
+              Riset & Publikasi
+            </span>
+          </Link>
+          <Link href="/video">
+            <span
+              className="cursor-pointer hover:text-cyan-400 transition"
+              onClick={toggleMobileMenu}
+            >
+              Video
             </span>
           </Link>
           <Link

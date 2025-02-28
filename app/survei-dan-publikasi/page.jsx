@@ -42,7 +42,7 @@ const SurveyPublicationPage = () => {
           {[
             { key: "all", label: "All Posts", disabled: false },
             { key: "berita", label: "Berita", disabled: false },
-            { key: "survey", label: "Survey", disabled: true },
+            { key: "riset", label: "Riset", disabled: true },
             { key: "publikasi", label: "Publikasi", disabled: true },
           ].map((tab) => (
             <button
@@ -68,7 +68,7 @@ const SurveyPublicationPage = () => {
         </div>
 
         {/* Konten Utama dengan Pagination (Hanya untuk All Posts & Berita) */}
-        {activeTab !== "survey" && activeTab !== "publikasi" && (
+        {activeTab !== "riset" && activeTab !== "publikasi" && (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {paginatedData.map((item) => (
