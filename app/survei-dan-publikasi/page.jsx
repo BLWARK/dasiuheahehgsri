@@ -129,7 +129,7 @@ const SurveyPublicationPage = () => {
             <Link key={`${item.category}-${item.id}`} href={`/post/${item.slug}`} passHref>
               <div className="flex flex-col items-start gap-4 py-10 border-b border-gray-700 cursor-pointer transition-transform transform hover:scale-105">
                 {/* Gambar Thumbnail dengan ukuran tetap */}
-                <div className="relative 2xl:w-full xl:w-full lg:w-[90%] h-[200px] rounded overflow-hidden">
+                <div className="relative 2xl:w-full xl:w-[90%] lg:w-[90%] h-[200px] rounded overflow-hidden">
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
 
