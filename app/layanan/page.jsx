@@ -151,7 +151,7 @@ const Layanan = () => {
           </li>
           <li className="ml-5">
             <a
-              href="https://x.com/Data1nu"
+              href="https://x.com/Data1n"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline font-semibold"
