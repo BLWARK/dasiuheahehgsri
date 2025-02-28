@@ -124,12 +124,12 @@ const SurveyPublicationPage = () => {
         <h2 className="text-2xl font-bold mb-6 text-mains">Postingan Terbaru</h2>
         <div className="w-[30%] h-[2px] bg-mains 2xl:my-5 xl:my-0 lg:my-0"></div> {/* Garis separator heading */}
 
-        <div className="2xl:space-y-6 xl:space-y-0 lg:space-y-0 2xl:flex 2xl:flex-col xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2 ">
+        <div className="2xl:space-y-6 xl:space-y-0 lg:space-y-0 2xl:flex 2xl:flex-col xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2  ">
           {filteredData.slice(0, 5).map((item) => (
             <Link key={`${item.category}-${item.id}`} href={`/post/${item.slug}`} passHref>
               <div className="flex flex-col items-start gap-4 py-10 border-b border-gray-700 cursor-pointer transition-transform transform hover:scale-105">
                 {/* Gambar Thumbnail dengan ukuran tetap */}
-                <div className="relative w-full h-[200px] rounded overflow-hidden">
+                <div className="relative 2xl:w-full xl:w-full lg:w-[90%] h-[200px] rounded overflow-hidden">
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
 
