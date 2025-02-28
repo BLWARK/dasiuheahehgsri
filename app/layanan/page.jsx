@@ -6,6 +6,11 @@ import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import Image from "next/image";
 
+
+
+
+
+
 const Layanan = () => {
   useEffect(() => {
     AOS.init({
@@ -51,7 +56,9 @@ const Layanan = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-gray-900 text-white mb-20">
+   
+
+      <div className="w-full min-h-screen bg-gray-900 text-white mb-20">
       {/* Section Header */}
       <div className="relative w-full 2xl:h-[500px] h-[300px]">
         <Image
@@ -199,6 +206,7 @@ const Layanan = () => {
         </p>
       </div>
     </div>
+    
   );
 };
 
