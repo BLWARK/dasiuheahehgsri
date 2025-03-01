@@ -27,7 +27,9 @@ const Cta = () => {
       </p>
 
       {/* Tombol */}
-      <Link href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya," 
+      <Link 
+      href="/"
+      // href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya," 
       target="_blank"
       rel="noopener noreferrer">
       

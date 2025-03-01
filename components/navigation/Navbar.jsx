@@ -79,8 +79,9 @@ const Navbar = () => {
             </span>
           </Link>
           <Link
-            href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya,"
-            target="_blank"
+            // href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya,"
+            href="/"
+            // target="_blank"
             rel="noopener noreferrer"
           >
             <span className="cursor-pointer hover:text-cyan-400 transition">
@@ -162,8 +163,9 @@ const Navbar = () => {
             </span>
           </Link>
           <Link
-            href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya,"
-            target="_blank"
+            // href="https://api.whatsapp.com/send?phone=6281380805118&text=Halo%20GSRI,%20saya%20ingin%20bertanya,"
+            href="/"
+            // target="_blank"
             rel="noopener noreferrer"
           >
             <span className="cursor-pointer hover:text-cyan-400 transition">
