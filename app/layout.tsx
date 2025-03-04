@@ -9,7 +9,22 @@ const poppins = Poppins({
   weight: ["300", "500", "600", "700", "800", "900"],
 });
 
-// ✅ Metadata yang lebih lengkap untuk SEO dan Social Media
+// ✅ JSON-LD Schema Markup untuk SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "GSRI | Global Strategi Riset Indonesia",
+  "url": "https://www.gsri.co.id",
+  "logo": "https://www.gsri.co.id/logo-new.png",
+  "description": "Organisasi riset terkemuka di Indonesia yang menyediakan wawasan strategis berbasis data.",
+  "foundingDate": "2020-01-01",
+  "sameAs": [
+    "https://twitter.com/gsri_indonesia",
+    "https://www.linkedin.com/company/gsri-indonesia"
+  ]
+};
+
+// ✅ Metadata Global untuk SEO
 export const metadata: Metadata = {
   title: "GSRI | Global Strategi Riset Indonesia",
   description:
@@ -26,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "GSRI",
     images: [
       {
-        url: "/logo-new.png",
+        url: "https://www.gsri.co.id/logo-new.png",
         width: 1200,
         height: 630,
         alt: "GSRI - Global Strategi Riset Indonesia",
@@ -41,11 +56,20 @@ export const metadata: Metadata = {
     title: "GSRI | Global Strategi Riset Indonesia",
     description:
       "Riset strategis berkualitas tinggi, wawasan berbasis data, dan survei strategis untuk mendukung pengambil keputusan.",
-    images: ["/logo-new.png"],
+    images: ["https://www.gsri.co.id/logo-new.png"],
   },
   alternates: {
     canonical: "https://www.gsri.co.id",
   },
+  other: {
+    "application/ld+json": JSON.stringify(jsonLd),
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -55,7 +79,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <head>
+        {/* Google Tag Manager (GTM) - Jika Dibutuhkan */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-XXXXX');
+          `
+        }} />
+      </head>
       <body className={poppins.className}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXX"
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
+        </noscript>
+
+        {/* Konten Website */}
         <div className="relative overflow-hidden bg-gray-900">
           <Navbar />
           <div className="relative">{children}</div>

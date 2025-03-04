@@ -77,7 +77,7 @@ const Hero = () => {
   return (
     <div className="relative w-screen h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
-      {/* <video
+      <video
         autoPlay
         loop
         muted
@@ -86,7 +86,7 @@ const Hero = () => {
       >
         <source src="/hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video> */}
+      </video>
 
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70"></div>

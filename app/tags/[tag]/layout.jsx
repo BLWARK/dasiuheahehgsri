@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const rawTag = params?.tag || "";
   const formattedTag = decodeURIComponent(rawTag.replace(/-/g, " ")).toLowerCase();
 
-  // Temukan berita yang memiliki tag yang cocok
+  // Temukan item yang memiliki tag yang cocok
   const matchingItems = combinedData.filter((item) =>
     item.tags?.some((tag) => tag.toLowerCase() === formattedTag)
   );
@@ -26,16 +26,55 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  // Ambil gambar pertama atau gunakan gambar default jika tidak ada
+  const firstImage = matchingItems[0]?.image || "/default-image.jpg";
+
+  // JSON-LD untuk SEO Schema.org (Berita dan Artikel)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `Berita tentang ${formattedTag}`,
+    "description": `Jelajahi berita, publikasi, dan survei terbaru yang berkaitan dengan topik "${formattedTag}".`,
+    "url": `https://www.gsri.co.id/tags/${params.tag}`,
+    "numberOfItems": matchingItems.length,
+    "itemListElement": matchingItems.slice(0, 5).map((item, index) => ({
+      "@type": "NewsArticle",
+      "position": index + 1,
+      "headline": item.title,
+      "url": `https://www.gsri.co.id/post/${item.slug}`,
+      "image": {
+        "@type": "ImageObject",
+        "url": item.image,
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": new Date(item.date).toISOString(),
+      "author": {
+        "@type": "Person",
+        "name": "GSRI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "GSRI",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.gsri.co.id/logo.png"
+        }
+      }
+    }))
+  };
+
   return {
-    title: `Berita dengan Tag: ${formattedTag} | GSRI`,
+    title: `Berita ${formattedTag} terbaru hari ini | GSRI`,
     description: `Jelajahi berita, publikasi, dan survei terbaru yang berkaitan dengan topik "${formattedTag}".`,
+    robots: "index, follow",
     openGraph: {
       title: `Berita dengan Tag: ${formattedTag} | GSRI`,
       description: `Jelajahi berita, publikasi, dan survei terbaru yang berkaitan dengan topik "${formattedTag}".`,
       url: `https://www.gsri.co.id/tags/${params.tag}`,
       images: [
         {
-          url: matchingItems[0].image, // Ambil gambar dari berita pertama yang cocok
+          url: firstImage,
           width: 1200,
           height: 630,
           alt: `Berita tentang ${formattedTag}`,
@@ -47,8 +86,9 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: `Berita dengan Tag: ${formattedTag} | GSRI`,
       description: `Jelajahi berita, publikasi, dan survei terbaru yang berkaitan dengan topik "${formattedTag}".`,
-      images: [matchingItems[0].image], // Ambil gambar pertama yang cocok
+      images: [firstImage],
     },
+    jsonLd, // ✅ Tambahkan JSON-LD ke Metadata API
   };
 }
 

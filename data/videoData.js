@@ -24,6 +24,13 @@ const videoData = [
       embedUrl: "https://www.youtube.com/embed/qvggx_pfgWE?si=WwfNYUcnUl8Dm4HG",
       
     },
+    {
+      id: 5,
+      title: "Program MBG: Sumber Pemborosan Baru, Konsep hingga Pelaksanaan Amburadul!",
+      description: "Hasil Riset GSRI pimpinan Sebastian Salang, program MBG itu antara janji politik dan sumber baru pemborosan uang negara. Konsep hingga pelaksanaannya juga amburadul! Apakah ini realisasi janji politik atau hanya menghamburkan uang rakyat? Benarkah anggaran negara serang dalam ancaman?",
+      embedUrl: "https://www.youtube.com/embed/v-mEcCCB3V0?si=Tl5F6h-aJnaKNKko",
+      
+    },
 
     
   ];

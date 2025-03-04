@@ -602,6 +602,169 @@ const newsData = [
     ]
 },
 
+{
+  id: 11,
+  title: "GSRI: Program MBG Bentuk Pemborosan Baru, Duplikasi Program Lain",
+  type: "headline",
+  image: "/Program MBG.jpg",
+  date: "Mar 03 2025",
+  view: 25000,
+  description:
+  "Dalam beberapa bulan terakhir, pemerintah Indonesia tengah merancang dan bersiap untuk meluncurkan <strong>Program Makan Bergizi Gratis",
+  slug: "Program-Makan-Bergizi-Gratis-janji-politik-atau-Pemborosan-uang-negara",
+  content: `
+    
+    <p>
+      Dalam beberapa bulan terakhir, pemerintah Indonesia tengah merancang dan bersiap untuk meluncurkan <strong>Program Makan Bergizi Gratis (MBG)</strong>, sebuah inisiatif ambisius yang digagas oleh Presiden Prabowo Subianto. 
+      Program ini mencakup berbagai kelompok masyarakat, termasuk siswa dari PAUD hingga SMA, ibu hamil, balita, lansia, dan kelompok disabilitas. 
+      Tujuan utama MBG adalah meningkatkan kecukupan gizi, mengurangi angka putus sekolah, serta merangsang pertumbuhan ekonomi lokal.
+    </p>
+    <br />
+    
+    <p>
+      Namun, penelitian terbaru yang dilakukan oleh <strong>Global Strategi Riset Indonesia (GSRI)</strong> mengungkapkan sejumlah fakta mengejutkan. 
+      Dalam laporan berjudul <strong>"Antara Janji Politik dan Pemborosan Uang Negara"</strong>, ditemukan bahwa program serupa telah ada sebelumnya dalam berbagai bentuk, 
+      dengan setidaknya 10 program terdahulu yang memiliki konsep serupa. Hal ini menimbulkan pertanyaan kritis: 
+      Apakah MBG akan menjadi solusi inovatif atau hanya tumpang tindih dengan program yang sudah berjalan?
+    </p>
+    <br />
+
+    <strong class="judul-besar">Program Serupa Sudah Ada Sebelumnya</strong><br /><br />
+
+    <p>
+      <strong>Sebastian Salang</strong>, Direktur Eksekutif GSRI, mengungkapkan bahwa dalam analisis dokumen anggaran dan kebijakan sebelumnya, ditemukan bahwa program serupa telah dijalankan oleh pemerintahan terdahulu. 
+      Meskipun menggunakan nama berbeda, inti kebijakannya tetap sama: memberikan bantuan pangan kepada kelompok rentan. Bahkan, beberapa dari program ini masih berjalan hingga saat ini.
+    </p>
+    <br />
+
+    <p>
+      "Kami mencatat bahwa program-program sejenis telah ada sebelumnya. Artinya, ketika MBG mulai dijalankan pada 2025, masih ada <strong>10 program serupa</strong> yang tetap berjalan. 
+      Ini menimbulkan potensi tumpang tindih kebijakan serta kemungkinan terjadinya pemborosan anggaran negara," ungkapnya.
+    </p>
+    <br />
+
+    <strong class="judul-besar">Konsep dan Implementasi MBG</strong><br /><br />
+
+    <p>
+      Program MBG berada di bawah kendali <strong>Badan Gizi Nasional (BGN)</strong>, lembaga baru yang dibentuk khusus untuk mengelola kebijakan ini. 
+      Beberapa tujuan utama MBG meliputi:
+    </p>
+    <br />
+    
+    <p><strong>Meningkatkan gizi ibu hamil dan balita.</strong></p>
+    <p><strong>Memberikan makanan bergizi dan susu gratis bagi siswa dari PAUD hingga SMA.</strong></p>
+    <p><strong>Meminimalisir pengeluaran rumah tangga dengan menyediakan makanan gratis.</strong></p>
+    <p><strong>Mendorong pertumbuhan ekonomi lokal melalui pemberdayaan sektor pertanian, peternakan, dan perikanan.</strong></p>
+    <br />
+
+    <p>
+      Dalam praktiknya, program ini akan dijalankan melalui konsep dapur umum (<strong>Satuan Pelayanan Pemenuhan Gizi - SPPG</strong>) yang akan didirikan di berbagai wilayah. 
+      Menurut dokumen BGN, target awalnya adalah membangun <strong>500 dapur umum</strong> pada Januari 2025, yang akan ditingkatkan menjadi <strong>5.000 dapur umum</strong> pada pertengahan tahun.
+    </p>
+    <br />
+
+    <strong class="judul-besar">Tantangan dan Potensi Kegagalan</strong><br /><br />
+
+    <p>
+      Meskipun memiliki tujuan baik, riset GSRI menemukan sejumlah kendala yang dapat menghambat keberhasilan program MBG:
+    </p>
+    <br />
+
+    <p><strong>• Tumpang Tindih dan Potensi Anggaran Ganda.</strong> Dengan 10 program serupa yang masih berjalan, MBG bisa berisiko membebani anggaran negara.</p>
+    </br>
+    <p><strong>• Koordinasi yang Kompleks.</strong> MBG harus berkoordinasi dengan 10 kementerian dan berbagai lembaga, yang dapat memperlambat birokrasi.</p>
+    </br>
+    <p><strong>• Ketimpangan Geografis.</strong> Dapur umum di ibu kota kabupaten mungkin tidak menjangkau daerah 3T (Tertinggal, Terdepan, Terluar).</p>
+    </br>
+    <p><strong>• Teknis Penyaluran Makanan.</strong> Model dapur umum berisiko menghadapi masalah distribusi, kualitas makanan, dan transparansi anggaran.</p>
+    </br>
+    <p><strong>• Masalah Validitas Data Penerima Manfaat.</strong> Sistem pendataan yang kurang akurat dapat menyebabkan distribusi bantuan yang tidak tepat sasaran.</p>
+    <br />
+
+    <strong class="judul-besar">Harapan atau Ancaman?</strong><br /><br />
+
+    <p>
+      Sebagai program prioritas Presiden Terpilih <strong>Prabowo Subianto</strong>, MBG diharapkan dapat membawa manfaat besar bagi masyarakat. 
+      Namun, riset GSRI menunjukkan banyak tantangan yang perlu diselesaikan agar program ini tidak hanya menjadi janji politik tanpa hasil konkret.
+    </p>
+    <br />
+
+    <p>
+      Jika pemerintah ingin memastikan keberhasilan MBG, beberapa langkah perlu dilakukan:
+    </p>
+    <br />
+
+    <p><strong>1. Evaluasi program-program sebelumnya agar tidak terjadi duplikasi kebijakan.</strong></p>
+    <p><strong>2. Menyederhanakan struktur birokrasi dan mekanisme koordinasi agar lebih efisien.</strong></p>
+    <p><strong>3. Menyempurnakan sistem pendataan penerima manfaat agar tepat sasaran.</strong></p>
+    <p><strong>4. Menyesuaikan model pelaksanaan dengan kondisi geografis Indonesia.</strong></p>
+    <br />
+
+    <p>
+      Tanpa langkah-langkah perbaikan ini, Program MBG berisiko menjadi sekadar proyek mercusuar tanpa realisasi efektif. 
+      Oleh karena itu, publik harus tetap kritis dalam mengawal kebijakan ini agar benar-benar memberikan manfaat nyata bagi masyarakat.
+    </p>
+    <br />
+  `,
+  category: "berita",
+  tags: [
+    "GSRI",
+    "Data1n",
+    "Kebijakan Publik",
+    "Anggaran Negara",
+    "Badan Gizi Nasional",
+    "Program Makan Bergizi Gratis",
+    "Pemerintahan Prabowo",
+    "Tumpang Tindih Kebijakan",
+    "Defisit Anggaran",
+    "Reformasi Fiskal",
+    "Makan Bergizi",
+    "MBG"
+  ]
+},
+{
+  id: 12,
+  title: "GSRI: Makan Gratis, Gizi Tipis? Program MBG yang Katanya Siap Jalan!",
+  type: "headline",
+  image: "/mbg-program.webp",
+  date: "Mar 04 2025",
+  views: 6200,
+  description: "Program Makan Bergizi Gratis (MBG) yang digadang-gadang sebagai solusi stunting ternyata diwarnai berbagai persoalan teknis sejak awal.",
+  slug: "gsri-makan-gratis-gizi-tipis",
+  content: `
+    <p>Program Makan Bergizi Gratis (MBG) yang digadang-gadang bakal menjadi ‘jurus pamungkas’ untuk mengatasi masalah stunting dan gizi buruk, justru diwarnai beragam persoalan konseptual dan teknis sejak awal. Hal ini terungkap dalam paparan Direktur Eksekutif Global Strategi Riset Indonesia (GSRI), Sebastian Salang, bersama host Podcast Data1n, Sabrina Restawan. Keduanya membedah secara rinci kondisi lapangan, data anggaran, hingga proses distribusi makanan yang ternyata masih jauh dari harapan.</p>
+    <br/>
+    <p class="judul-besar">Niat Baik, Eksekusi Bikin Pening</p>
+    <p>Dari penjelasan GSRI, program MBG diluncurkan dengan niat mulia: memberi asupan bergizi bagi anak-anak dari jenjang PAUD, TK, SD, SMP, hingga SMA, serta menjangkau ibu hamil dan ibu menyusui di seluruh Indonesia. Bahkan, pemerintah sempat menegaskan bahwa prioritas utama justru ditujukan bagi kawasan 3T (terdepan, terluar, tertinggal).</p>
+    <p>Sayangnya, hasil riset GSRI mendapati kenyataan berbeda. Dapur-dapur umum—yang bertugas memasak serta mendistribusikan makanan—baru banyak terbentuk di wilayah kota besar. Alih-alih menjangkau daerah pelosok, pemenuhan target 5000 dapur umum justru mandek pada angka 200-an dapur saja sampai awal Februari.</p>
+    <br/>
+    <p class="judul-besar">Anggaran Raksasa, Sasaran Masih Buram</p>
+    <p>Dalam paparannya, GSRI menegaskan bahwa Badan Gizi Nasional (BGN) mengelola anggaran fantastis, yaitu 71 triliun rupiah (sebelum tambahan). Angka ini bahkan bisa membengkak menjadi 171 triliun rupiah seiring janji pemerintah untuk menambah porsi pendanaan. Dengan anggaran sebesar itu, pertanyaannya: apakah pelaksanaan di lapangan sudah sepadan?</p>
+    <p>Pasalnya, dari total 171 triliun rupiah, sekitar 56 triliun rupiah dialokasikan khusus untuk pembelian bahan makanan—namun, di atas kertas, menu bagi anak-anak PAUD hingga SD kelas 3 hanya dianggarkan Rp6.000,00 per porsi. Sedangkan siswa SD kelas 4 ke atas hingga ibu menyusui mendapat Rp10.000,00 per porsi. Angka ini menimbulkan kebingungan: bagaimana memastikan kandungan gizi tinggi dengan biaya sekecil itu?</p>
+    <br/>
+    <p class="judul-besar">Dapur Umum “Bersponsor”?</p>
+    <p>Tak hanya soal makanan. Pembangunan dapur umum berikut pengadaan peralatan masak—seperti kompor, panci, hingga food tray—ikut memunculkan pertanyaan. Program MBG mewajibkan standar tertentu yang acap kali membuat proses pengadaan membengkak. Pernah pula mencuat isu bahwa pembelian food tray dalam negeri lebih mahal ketimbang impor. Demi menggenjot industri lokal, impor konon dilarang, sementara harga produk lokal bisa menembus dua kali lipat.</p>
+    <br/>
+    <p class="judul-besar">‘Rapor Merah’ Koordinasi dan Validitas Data</p>
+    <p>Tak sedikit yang merasa bahwa program MBG sebenarnya berangkat dari janji politik pemimpin baru—yang ingin membuktikan komitmennya pada pemenuhan gizi generasi muda. Namun, tergesa-gesa mengeksekusi program tanpa perencanaan dan koordinasi matang dikhawatirkan akan menimbulkan pemborosan.</p>
+    <p>GSRI menyarankan beberapa solusi konkret:</p>
+    <br/>
+    <p><strong>1. Moratorium Pelaksanaan MBG.</strong> Menunda sementara pelaksanaan program MBG agar tidak semakin memperbesar kerugian negara.</p>
+    <p><strong>2. Sinkronisasi Data dan Program.</strong> Memetakan dulu seluruh program serupa yang sudah berjalan—seperti PKH, bantuan permakanan, dan lainnya—agar tak terjadi duplikasi anggaran.</p>
+    <p><strong>3. Validasi Penerima Manfaat.</strong> Menyusun data by name by address yang jelas, sehingga bantuan tepat sasaran.</p>
+    <p><strong>4. Kejelasan Aset dan Mekanisme Pengadaan.</strong> Menetapkan prosedur transparan agar pembangunan dapur dan pembelian perlengkapan benar-benar menjadi aset negara, bukan pihak tertentu.</p>
+    <p><strong>5. Pengawasan dan Audit.</strong> Meningkatkan transparansi serta akuntabilitas melalui audit rutin, mengingat anggaran MBG tergolong sangat besar.</p>
+    <br/>
+    <p>Program Makan Bergizi Gratis awalnya digadang-gadang mampu menjadi titik balik penanganan gizi di Indonesia. Namun, melihat rangkaian masalah di atas—dari kesimpangsiuran data, minimnya kesiapan infrastruktur, hingga potensi pemborosan—rasanya perlu lebih banyak langkah koreksi.</p>
+    <br/>
+    <p>Bak kata pepatah, “Niat saja tidak cukup jika eksekusinya amburadul.” Semoga pemerintah segera menerapkan rekomendasi, memperjelas data, menata ulang eksekusi di lapangan, dan memastikan anggaran raksasa yang digelontorkan tidak sia-sia. Karena pada akhirnya, kesehatan dan masa depan anak-anak bangsa adalah taruhan terbesar di balik kisruh pelaksanaan program MBG ini.</p>
+  `,
+  tags: ["Makan Bergizi Gratis", "Stunting", "Program Sosial", "GSRI"],
+  category: "berita",
+  authorId: 3
+},
+
+
   
 ];
 
